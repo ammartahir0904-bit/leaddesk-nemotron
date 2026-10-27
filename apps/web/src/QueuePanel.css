@@ -1,0 +1,148 @@
+.queue-panel {
+  display: grid;
+  gap: 20px;
+  min-width: 0;
+}
+
+.queue-budget-fields,
+.queue-metrics {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.queue-budget-note,
+.queue-empty {
+  margin-top: 15px;
+}
+
+.queue-metrics {
+  margin: 20px 0;
+  font-size: 12px;
+}
+
+.queue-metrics dt {
+  color: #6e8167;
+}
+
+.queue-metrics dd {
+  margin: 5px 0 0;
+  font-size: 16px;
+}
+
+.queue-offer {
+  font-size: 16px;
+  font-weight: 500;
+  overflow-wrap: anywhere;
+}
+
+.queue-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 18px 0;
+}
+
+.queue-reason {
+  font-size: 12px;
+  margin-top: 12px;
+}
+
+.queue-list {
+  display: grid;
+  gap: 8px;
+  margin-top: 16px;
+}
+
+.queue-list-item {
+  background: #f5f8ef;
+  border: 1px solid #e0e8d8;
+  color: #355b44;
+  padding: 13px;
+  text-align: left;
+  font-size: 12px;
+  overflow-wrap: anywhere;
+}
+
+.queue-list-item small {
+  display: block;
+  margin-top: 5px;
+}
+
+.queue-section-heading {
+  font-size: 15px;
+  margin-top: 22px;
+}
+
+.queue-step {
+  padding: 18px 0;
+  border-bottom: 1px solid #e3e9da;
+  font-size: 12px;
+  overflow-wrap: anywhere;
+}
+
+.queue-step-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 15px;
+}
+
+.queue-step p {
+  margin: 8px 0;
+}
+
+.queue-step small {
+  display: block;
+  margin-top: 7px;
+}
+
+.queue-step details,
+.queue-connector,
+.queue-coverage,
+.queue-events {
+  margin-top: 18px;
+  font-size: 12px;
+}
+
+.queue-connector p {
+  margin-top: 8px;
+  color: #6e8167;
+}
+
+.queue-hash {
+  overflow-wrap: anywhere;
+  font-family: monospace;
+  font-size: 10px;
+}
+
+.queue-error {
+  color: #994e35;
+}
+
+.queue-coverage li,
+.queue-events li {
+  margin: 9px 0;
+  overflow-wrap: anywhere;
+}
+
+.queue-events time {
+  font-size: 10px;
+  color: #6e8167;
+}
+
+@media (max-width: 720px) {
+  .queue-budget-fields {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  .queue-metrics {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .queue-step-title,
+  .queue-panel .panel-title {
+    flex-wrap: wrap;
+  }
+}

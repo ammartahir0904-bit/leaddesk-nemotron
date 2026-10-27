@@ -1,0 +1,20 @@
+.leads-panel,.lead-results{display:grid;gap:20px;min-width:0}
+.lead-search{display:grid;grid-template-columns:1fr 2fr;gap:16px}
+.lead-filter-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:0 16px}
+.lead-actions{display:flex;flex-wrap:wrap;align-items:center;gap:10px;margin:18px 0 12px}
+.lead-counts{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;margin:0 0 18px}
+.lead-counts dt{font-size:11px;color:#6e8167}.lead-counts dd{margin:5px 0 0;font-size:24px}
+.lead-overview>p{margin:10px 0}.lead-overview>small{display:block}
+.lead-card{overflow-wrap:anywhere;min-width:0}.lead-card-heading{display:flex;justify-content:space-between;align-items:flex-start;gap:15px}
+.lead-card-heading h2{font-size:20px;margin:6px 0}.lead-card-heading p,.lead-card-heading a{font-size:11px}
+.lead-states{display:flex;gap:8px;flex-wrap:wrap;margin:16px 0}.lead-states span{background:#f3f6ed;padding:5px 8px;border-radius:5px;font-size:10px}
+.lead-card-grid{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,1fr);gap:24px}
+.lead-card-grid h3{margin:12px 0 8px}.lead-contacts{list-style:none;padding:0;margin:0}
+.lead-contacts>li{border-bottom:1px solid #e3e9da;padding:14px 0;font-size:12px}.lead-contacts>li>strong,.lead-contacts>li>span,.lead-contacts small{display:block}
+.lead-contacts>li>span{font-size:10px;margin:5px 0;color:#68796f}.lead-contacts details{margin-top:10px}.lead-contacts a{font-size:11px;text-decoration:underline}
+.lead-excluded{background:#fcf3ee;padding:12px!important}.lead-excluded-contacts{margin-top:14px}
+.lead-context p,.lead-empty p{font-size:12px}.lead-context small{display:block;margin-top:8px}
+.lead-reasons{margin-top:18px}.lead-reasons li{font-size:11px;margin:7px 0}.lead-stale{background:#fcf4dd;color:#846b29;padding:12px;border-radius:6px;font-size:11px}
+.lead-card-footer{display:flex;align-items:center;justify-content:space-between;gap:20px;border-top:1px solid #e3e9da;margin-top:18px;padding-top:16px}
+.lead-card-footer p{font-size:11px;flex:1}.lead-card-footer button{flex-shrink:0}.lead-pagination{display:flex;justify-content:space-between;gap:10px;align-items:center;font-size:11px}
+@media(max-width:720px){.lead-search,.lead-filter-grid,.lead-card-grid{grid-template-columns:1fr;gap:0}.lead-counts{grid-template-columns:1fr 1fr}.lead-card-heading,.lead-card-footer{flex-direction:column}.leads-panel .panel-title{flex-wrap:wrap;gap:12px}.lead-pagination{flex-wrap:wrap}.lead-pagination button{padding:10px}.lead-card-heading .tag{white-space:normal}}

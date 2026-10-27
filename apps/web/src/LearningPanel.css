@@ -1,0 +1,20 @@
+.learning-panel { display: grid; gap: 22px; min-width: 0; }
+.learning-panel .panel { min-width: 0; }
+.learning-panel input, .learning-panel textarea, .learning-panel select { max-width: 100%; width: 100%; }
+.learning-panel textarea { min-height: 90px; resize: vertical; }
+.learning-panel label { margin-top: 16px; }
+.learning-panel p, .learning-panel small, .learning-panel pre, .learning-panel summary { overflow-wrap: anywhere; white-space: pre-wrap; }
+.learning-panel small { display: block; margin-top: 7px; }
+.learning-counts { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 12px; }
+.learning-counts dt { font-size: 12px; }.learning-counts dd { margin: 8px 0; font-size: 24px; }
+.learning-actions { display: flex; flex-wrap: wrap; gap: 10px; margin: 16px 0; }
+.learning-card, .learning-version { border: 1px solid #dce5df; border-radius: 8px; padding: 15px; margin: 14px 0; }
+.learning-panel .learning-check { display: flex; align-items: flex-start; gap: 10px; }
+.learning-panel .learning-check input { width: auto; flex: 0 0 auto; margin-top: 4px; }.learning-check span { min-width: 0; }
+.learning-panel fieldset { min-width: 0; border: 1px solid #dce5df; margin: 20px 0; }
+.learning-panel pre { max-height: 320px; overflow: auto; padding: 12px; background: #f4f7f5; }
+@media (max-width: 720px) { .learning-counts { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+.evaluation-panel form { display: grid; gap: 10px; }
+.evaluation-panel input, .evaluation-panel textarea { width: 100%; min-width: 0; }
+.evaluation-panel p, .evaluation-panel code { overflow-wrap: anywhere; }
+.evaluation-panel pre { white-space: pre-wrap; overflow-wrap: anywhere; max-width: 100%; }

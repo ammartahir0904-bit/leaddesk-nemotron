@@ -1,0 +1,17 @@
+.correspondence-panel { display: grid; gap: 20px; min-width: 0; }
+.correspondence-panel .panel { min-width: 0; }
+.correspondence-panel form { display: grid; gap: 10px; margin-top: 16px; }
+.correspondence-panel form button { justify-self: start; }
+.correspondence-panel input, .correspondence-panel select, .correspondence-panel textarea { max-width: 100%; min-width: 0; width: 100%; }
+.correspondence-panel select { border: 1px solid var(--border, #dce4e0); border-radius: 8px; padding: 12px; background: white; }
+.correspondence-actions { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 12px; }
+.correspondence-card { border-top: 1px solid var(--border, #dce4e0); padding: 16px 0; }
+.correspondence-card h3 { overflow-wrap: anywhere; }
+.correspondence-panel pre { white-space: pre-wrap; overflow-wrap: anywhere; max-width: 100%; padding: 14px; background: #f2f6f4; border-radius: 8px; }
+.correspondence-preview dl { display: grid; gap: 8px; overflow-wrap: anywhere; }
+.correspondence-preview dt { font-weight: 600; }
+.correspondence-preview dd { margin-left: 0; }
+.correspondence-preview blockquote { margin: 12px 0; padding-left: 12px; border-left: 3px solid #9bb9ac; overflow-wrap: anywhere; }
+.correspondence-preview small { display: block; }
+.correspondence-check { display: flex; align-items: flex-start; gap: 8px; }
+.correspondence-check input { width: auto; margin-top: 4px; }

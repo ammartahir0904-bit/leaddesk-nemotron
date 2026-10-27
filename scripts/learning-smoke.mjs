@@ -1,0 +1,86 @@
+// Run only against disposable data. Creates a fictional demo/correction, never trains.
+import { chromium } from '../apps/web/node_modules/playwright-core/index.mjs';
+import assert from 'node:assert/strict';
+import { readFileSync } from 'node:fs';
+import { resolve } from 'node:path';
+
+const base = process.env.LEADDESK_TEST_URL || 'http://127.0.0.1:8765';
+const tokenFile = process.env.LEADDESK_TEST_TOKEN_FILE || resolve('../../.local/browser-check/access-token');
+const browser = await chromium.launch({ executablePath: process.env.CHROME_PATH || '/usr/bin/google-chrome', headless: true });
+const run = `learning-smoke-${Date.now()}`, expected = `Fictional reviewed abstention ${run}`;
+let page, auth, exampleId, versionId, download;
+try {
+  const token = readFileSync(tokenFile, 'utf8').trim(); auth = { Authorization: `Bearer ${token}` };
+  page = await browser.newPage({ viewport: { width: 1440, height: 1000 } });
+  const errors = []; page.on('pageerror', error => errors.push(error.message));
+  await page.goto(base);
+  await page.getByLabel('Local access key').fill(token); await page.getByRole('button', { name: 'Unlock workspace' }).click();
+  await page.getByRole('button', { name: 'More tools', exact: true }).click();
+  const demoResponse = await page.request.post(`${base}/v1/demo`, { headers: { ...auth, 'Idempotency-Key': `${run}-demo` }, data: {} });
+  assert.equal(demoResponse.status(), 200); const demo = await demoResponse.json();
+  const feedback = await page.request.post(`${base}/v1/feedback`, { headers: auth, data: { contact_id: demo.contacts[0].id, category: 'wrong_contact', comment: run } });
+  assert.equal(feedback.status(), 200);
+  await page.getByRole('button', { name: 'Learning and datasets', exact: true }).click();
+  await page.getByLabel('Learning record source').selectOption('synthetic');
+  const sourceCard = page.locator('.learning-card').filter({ hasText: run });
+  await sourceCard.getByRole('button', { name: 'Review source', exact: true }).click();
+  await page.getByRole('heading', { name: 'Review dataset example', exact: true }).waitFor();
+  assert.equal(await page.getByRole('button', { name: 'Include reviewed example', exact: true }).isDisabled(), true);
+  await page.getByLabel('Dataset reviewer').fill('Fictional browser reviewer');
+  await page.getByLabel('Redacted example input').fill(`Fictional redacted source excerpt ${run}`);
+  await page.getByLabel('Reviewed observed output').fill('Fictional unsupported ownership prediction');
+  await page.getByLabel('Human-reviewed expected output').fill(expected);
+  await page.locator('.learning-review fieldset input[type=checkbox]').first().check();
+  await page.getByLabel('Reason for dataset decision').fill('Fictional source checked for this test');
+  await page.getByLabel('Source permission basis').fill('Authored synthetic fixture for local browser acceptance');
+  const redaction = page.getByLabel('I reviewed the fields and removed secrets and private material that must not enter this dataset.');
+  await redaction.check();
+  await page.getByLabel('Redacted example input').fill(`Corrected fictional redacted excerpt ${run}`);
+  assert.equal(await redaction.isChecked(), false);
+  await redaction.check();
+  await page.getByRole('button', { name: 'Include reviewed example', exact: true }).click();
+  await page.getByRole('status').filter({ hasText: 'Reviewed example saved. No training was run.' }).waitFor();
+  const exampleCard = page.locator('.learning-card').filter({ hasText: expected });
+  await exampleCard.getByRole('checkbox').check();
+  await page.getByLabel('Dataset version name').fill(run);
+  await page.getByLabel('Dataset purpose').selectOption('training');
+  await page.getByRole('button', { name: 'Freeze dataset version', exact: true }).click();
+  await page.getByRole('alert').filter({ hasText: 'Training needs explicit local-training permission' }).waitFor();
+  await page.getByLabel('Dataset purpose').selectOption('evaluation');
+  await page.getByRole('button', { name: 'Freeze dataset version', exact: true }).click();
+  await page.getByRole('heading', { name: `Dataset manifest: ${run}`, exact: true }).waitFor();
+  const versions = await (await page.request.get(`${base}/v1/learning/versions`, { headers: auth })).json();
+  versionId = versions.items.find(item => item.name === run).id;
+  const frozen = await (await page.request.get(`${base}/v1/learning/versions/${versionId}`, { headers: auth })).json();
+  exampleId = frozen.examples[0].id; assert.equal(frozen.examples[0].review.expected_output, expected);
+  assert.equal(frozen.training_executed, false); assert.equal(frozen.model_hash, null);
+  const downloading = page.waitForEvent('download');
+  await page.getByRole('button', { name: 'Export reviewed dataset', exact: true }).click(); download = await downloading;
+  const document = JSON.parse(readFileSync(await download.path(), 'utf8'));
+  assert.equal(document.dataset_sha256, frozen.dataset_sha256); assert.equal(document.examples.length, 1);
+  await exampleCard.getByRole('button', { name: 'Delete reviewed example', exact: true }).click();
+  await page.getByRole('button', { name: 'Confirm delete learning material', exact: true }).click();
+  const versionCard = page.locator('.learning-card').filter({ hasText: run }).filter({ has: page.getByRole('button', { name: 'Inspect dataset version', exact: true }) });
+  await versionCard.getByText('synthetic · evaluation · development · 1 examples · invalidated', { exact: true }).waitFor();
+  await versionCard.getByRole('button', { name: 'Inspect dataset version', exact: true }).click();
+  await page.getByRole('heading', { name: `Dataset manifest: ${run}`, exact: true }).waitFor();
+  assert.equal(await page.getByRole('button', { name: 'Export reviewed dataset', exact: true }).isDisabled(), true);
+  assert.equal((await page.request.get(`${base}/v1/learning/versions/${versionId}/export`, { headers: auth })).status(), 409);
+  const original = await (await page.request.get(`${base}/v1/research/${demo.id}`, { headers: auth })).json();
+  assert.equal(original.contacts.find(item => item.id === demo.contacts[0].id).suppressed, true);
+  await versionCard.getByRole('button', { name: 'Delete dataset version', exact: true }).click();
+  await page.getByRole('button', { name: 'Confirm delete learning material', exact: true }).click();
+  await page.getByRole('status').filter({ hasText: 'Learning material deleted.' }).waitFor();
+  assert.equal((await page.request.get(`${base}/v1/learning/versions/${versionId}`, { headers: auth })).status(), 404);
+  await page.setViewportSize({ width: 390, height: 844 });
+  assert.equal(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth), true);
+  assert.deepEqual(errors, []);
+  console.log('PASS: synthetic source review/redaction reset, evaluation-only permission, frozen/exported manifest, deletion invalidation and blocked export, preserved suppression and mobile overflow; no training');
+} finally {
+  await download?.delete();
+  if (page && auth) {
+    if (exampleId) await page.request.delete(`${base}/v1/learning/examples/${exampleId}`, { headers: auth }).catch(() => {});
+    if (versionId) await page.request.delete(`${base}/v1/learning/versions/${versionId}`, { headers: auth }).catch(() => {});
+  }
+  await browser.close();
+}

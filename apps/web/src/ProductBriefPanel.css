@@ -1,0 +1,174 @@
+.brief-panel {
+  display: grid;
+  gap: 20px;
+  min-width: 0;
+}
+
+.offer-fields {
+  border: 0;
+  padding: 0;
+  margin: 0;
+  min-width: 0;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+.offer-options {
+  margin-top: 18px;
+}
+
+.offer-options .muted {
+  margin-top: 10px;
+}
+
+.brief-empty {
+  margin-top: 12px;
+}
+
+.brief-list {
+  display: grid;
+  gap: 8px;
+  margin-top: 16px;
+}
+
+.brief-list-item {
+  text-align: left;
+  padding: 13px;
+  background: #f7f9f3;
+  color: #355b44;
+  border: 1px solid #e0e8d8;
+  overflow-wrap: anywhere;
+}
+
+.brief-list-item.active {
+  border-color: #769579;
+}
+
+.brief-list-item small {
+  display: block;
+  margin-top: 5px;
+}
+
+.brief-section-heading {
+  font-size: 15px;
+  margin: 25px 0 10px;
+}
+
+.brief-hypothesis {
+  margin-bottom: 18px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #e5ebde;
+}
+
+.hypothesis-actions,
+.brief-buttons {
+  display: flex;
+  align-items: flex-end;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.hypothesis-actions .text-button {
+  margin-bottom: 10px;
+}
+
+.brief-use {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  padding: 20px 0;
+}
+
+.brief-use p {
+  max-width: 430px;
+}
+
+.brief-unknowns,
+.brief-revisions {
+  border-top: 1px solid #e5ebde;
+  padding-top: 15px;
+  margin-top: 15px;
+}
+
+.brief-unknowns dl {
+  font-size: 12px;
+}
+
+.brief-unknowns dt {
+  text-transform: capitalize;
+  font-weight: 600;
+}
+
+.brief-unknowns dd {
+  margin: 3px 0 12px;
+  color: #6d8066;
+}
+
+.brief-revisions article {
+  padding: 14px 0;
+  border-bottom: 1px solid #edf0e7;
+  font-size: 12px;
+  overflow-wrap: anywhere;
+}
+
+.brief-revisions p {
+  margin-top: 5px;
+}
+
+.active-brief {
+  margin: 15px 0;
+  padding: 13px;
+  background: #f0f5e9;
+  border: 1px solid #d6e3ca;
+  border-radius: 7px;
+  font-size: 12px;
+  overflow-wrap: anywhere;
+}
+
+.active-brief p {
+  margin-top: 5px;
+}
+
+.record-brief-details {
+  margin-top: 15px;
+}
+
+.record-brief-details ul {
+  padding-left: 18px;
+  font-size: 12px;
+  overflow-wrap: anywhere;
+}
+
+@media (max-width: 720px) {
+  .workspace-nav {
+    flex-wrap: wrap;
+  }
+
+  .brief-panel .panel-title {
+    flex-wrap: wrap;
+  }
+
+  .brief-use {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .brief-buttons {
+    width: 100%;
+  }
+
+  .hypothesis-actions {
+    align-items: stretch;
+    flex-direction: column;
+    gap: 0;
+  }
+}

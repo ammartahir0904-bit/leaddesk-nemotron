@@ -1,0 +1,20 @@
+{
+  "measured_at": "2026-10-19T03:23:04.398223+00:00",
+  "platform": "Linux-6.8.0-136-generic-x86_64-with-glibc2.39",
+  "python": "3.12.3",
+  "cpu": "Intel(R) Core(TM) i5-8265U CPU @ 1.60GHz",
+  "ram_gib": 7.45,
+  "gpu": "unused; CPU-only parsing",
+  "model_hash": null,
+  "configuration": "deterministic visible_html_v1; no inference; one synthetic HTML fixture",
+  "fixture_sha256": "bfc93886f4ff154b16d039351bb47626fcf7f58153a55ea30d1231406a63291f",
+  "sample_count": 100,
+  "cold_ms": 3.6407860000053915,
+  "warm_p50_ms": 1.3132409999343508,
+  "p95_ms": 1.6708509999716625,
+  "peak_process_rss_mib": 18.625,
+  "network_requests": 0,
+  "inference_calls": 0,
+  "external_spend": 0,
+  "limitation": "Parser microbenchmark on synthetic data; excludes server, browser, live fetch, and model usage."
+}

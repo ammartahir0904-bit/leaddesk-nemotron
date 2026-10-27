@@ -1,0 +1,32 @@
+{
+  "name": "leaddesk-web",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=24.21.0 <25"
+  },
+  "scripts": {
+    "build": "vite build",
+    "test:e2e": "node ../../scripts/browser-smoke.mjs",
+    "test:e2e:files": "node ../../scripts/files-smoke.mjs",
+    "test:voice": "node --test --test-isolation=none ../../tests/voice-audio.test.mjs",
+    "test:e2e:voice": "node ../../scripts/voice-smoke.mjs",
+    "test:screen": "node --test --test-isolation=none ../../tests/screen-session.test.mjs",
+    "test:e2e:screen": "node ../../scripts/screen-smoke.mjs",
+    "test:e2e:evaluation": "node ../../scripts/evaluation-smoke.mjs",
+    "test:e2e:learning": "node ../../scripts/learning-smoke.mjs",
+    "test:e2e:workers": "node ../../scripts/workers-smoke.mjs",
+    "test:e2e:correspondence": "node ../../scripts/correspondence-smoke.mjs"
+  },
+  "dependencies": {
+    "@fontsource-variable/inter": "5.2.8",
+    "leaflet": "1.9.4",
+    "react": "19.3.0",
+    "react-dom": "19.3.0"
+  },
+  "devDependencies": {
+    "playwright-core": "1.63.0",
+    "vite": "8.3.1"
+  }
+}

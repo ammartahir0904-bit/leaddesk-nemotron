@@ -1,0 +1,22 @@
+# Minimal SearXNG settings for LeadDesk: JSON results for the local app,
+# no public-instance rate limiter (bound to 127.0.0.1 only), no image proxy.
+use_default_settings: true
+server:
+  limiter: false
+  image_proxy: false
+search:
+  safe_search: 0
+  formats:
+    - html
+    - json
+# More general web engines (Sprint 24): DuckDuckGo often returns nothing to automated queries, and social profiles
+# appear in different engines. Each result records which engine found it, so weak engines show up in Find online.
+engines:
+  - name: bing
+    disabled: false
+  - name: startpage
+    disabled: false
+  - name: mojeek
+    disabled: false
+  - name: qwant
+    disabled: false

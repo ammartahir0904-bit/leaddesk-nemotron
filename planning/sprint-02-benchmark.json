@@ -1,0 +1,594 @@
+{
+  "schema_version": 1,
+  "kind": "parser",
+  "measured_at": "2026-10-19T13:10:04.332327+00:00",
+  "hardware": {
+    "schema_version": 1,
+    "measured_at": "2026-10-19T13:10:04.330562+00:00",
+    "os": {
+      "system": "Linux",
+      "release": "6.8.0-136-generic",
+      "architecture": "x86_64",
+      "session": "wayland",
+      "python": "3.12.3"
+    },
+    "cpu": {
+      "model": "Intel(R) Core(TM) i5-8265U CPU @ 1.60GHz",
+      "logical_cores": 8
+    },
+    "memory": {
+      "total_bytes": 7997210624,
+      "available_bytes": 3604557824,
+      "swap_total_bytes": 8589930496,
+      "swap_free_bytes": 8586260480,
+      "cgroup_limit_bytes": null,
+      "cgroup_current_bytes": null,
+      "effective_available_bytes": 3604557824,
+      "reason": null
+    },
+    "disk": {
+      "total_bytes": 250375106560,
+      "free_bytes": 70801010688,
+      "reason": null
+    },
+    "gpu": {
+      "devices": [
+        {
+          "vendor_id": "0x8086",
+          "device_id": "0x3ea0",
+          "driver": "i915",
+          "vram_bytes": null,
+          "vram_reason": "Dedicated VRAM is not exposed by this driver; shared memory is not dedicated VRAM.",
+          "inference_support": "Not tested. Device presence does not establish runtime compatibility."
+        }
+      ],
+      "reason": null
+    },
+    "execution": {
+      "mode": "cpu",
+      "concurrency": 1,
+      "cloud_enabled": false,
+      "remote_enabled": false,
+      "model": null,
+      "model_reason": "No model selected or benchmarked. No model size is recommended from hardware alone.",
+      "reserve_bytes": 2147483648
+    },
+    "limitations": [
+      "Resource values are a point-in-time snapshot.",
+      "GPU inference, model fit and full application process-tree memory have not been measured."
+    ]
+  },
+  "configuration": {
+    "parser": "visible_html_v1",
+    "suite_version": 1,
+    "rounds": 20,
+    "case_count": 5,
+    "concurrency": 1
+  },
+  "model_hash": null,
+  "network_requests": 0,
+  "inference_calls": 0,
+  "external_spend": 0,
+  "fixture_sha256": "ba982e34c1af1d2433e91d923bc3b18859a03bcfceed7d1e4949261c4c43c955",
+  "status": "completed",
+  "sample_count": 100,
+  "passed_count": 100,
+  "results": [
+    {
+      "case_id": "visible-contact",
+      "round": 1,
+      "passed": true
+    },
+    {
+      "case_id": "hidden-contact",
+      "round": 1,
+      "passed": true
+    },
+    {
+      "case_id": "ambiguous-identity",
+      "round": 1,
+      "passed": true
+    },
+    {
+      "case_id": "no-guessed-whatsapp",
+      "round": 1,
+      "passed": true
+    },
+    {
+      "case_id": "explicit-whatsapp",
+      "round": 1,
+      "passed": true
+    },
+    {
+      "case_id": "visible-contact",
+      "round": 2,
+      "passed": true
+    },
+    {
+      "case_id": "hidden-contact",
+      "round": 2,
+      "passed": true
+    },
+    {
+      "case_id": "ambiguous-identity",
+      "round": 2,
+      "passed": true
+    },
+    {
+      "case_id": "no-guessed-whatsapp",
+      "round": 2,
+      "passed": true
+    },
+    {
+      "case_id": "explicit-whatsapp",
+      "round": 2,
+      "passed": true
+    },
+    {
+      "case_id": "visible-contact",
+      "round": 3,
+      "passed": true
+    },
+    {
+      "case_id": "hidden-contact",
+      "round": 3,
+      "passed": true
+    },
+    {
+      "case_id": "ambiguous-identity",
+      "round": 3,
+      "passed": true
+    },
+    {
+      "case_id": "no-guessed-whatsapp",
+      "round": 3,
+      "passed": true
+    },
+    {
+      "case_id": "explicit-whatsapp",
+      "round": 3,
+      "passed": true
+    },
+    {
+      "case_id": "visible-contact",
+      "round": 4,
+      "passed": true
+    },
+    {
+      "case_id": "hidden-contact",
+      "round": 4,
+      "passed": true
+    },
+    {
+      "case_id": "ambiguous-identity",
+      "round": 4,
+      "passed": true
+    },
+    {
+      "case_id": "no-guessed-whatsapp",
+      "round": 4,
+      "passed": true
+    },
+    {
+      "case_id": "explicit-whatsapp",
+      "round": 4,
+      "passed": true
+    },
+    {
+      "case_id": "visible-contact",
+      "round": 5,
+      "passed": true
+    },
+    {
+      "case_id": "hidden-contact",
+      "round": 5,
+      "passed": true
+    },
+    {
+      "case_id": "ambiguous-identity",
+      "round": 5,
+      "passed": true
+    },
+    {
+      "case_id": "no-guessed-whatsapp",
+      "round": 5,
+      "passed": true
+    },
+    {
+      "case_id": "explicit-whatsapp",
+      "round": 5,
+      "passed": true
+    },
+    {
+      "case_id": "visible-contact",
+      "round": 6,
+      "passed": true
+    },
+    {
+      "case_id": "hidden-contact",
+      "round": 6,
+      "passed": true
+    },
+    {
+      "case_id": "ambiguous-identity",
+      "round": 6,
+      "passed": true
+    },
+    {
+      "case_id": "no-guessed-whatsapp",
+      "round": 6,
+      "passed": true
+    },
+    {
+      "case_id": "explicit-whatsapp",
+      "round": 6,
+      "passed": true
+    },
+    {
+      "case_id": "visible-contact",
+      "round": 7,
+      "passed": true
+    },
+    {
+      "case_id": "hidden-contact",
+      "round": 7,
+      "passed": true
+    },
+    {
+      "case_id": "ambiguous-identity",
+      "round": 7,
+      "passed": true
+    },
+    {
+      "case_id": "no-guessed-whatsapp",
+      "round": 7,
+      "passed": true
+    },
+    {
+      "case_id": "explicit-whatsapp",
+      "round": 7,
+      "passed": true
+    },
+    {
+      "case_id": "visible-contact",
+      "round": 8,
+      "passed": true
+    },
+    {
+      "case_id": "hidden-contact",
+      "round": 8,
+      "passed": true
+    },
+    {
+      "case_id": "ambiguous-identity",
+      "round": 8,
+      "passed": true
+    },
+    {
+      "case_id": "no-guessed-whatsapp",
+      "round": 8,
+      "passed": true
+    },
+    {
+      "case_id": "explicit-whatsapp",
+      "round": 8,
+      "passed": true
+    },
+    {
+      "case_id": "visible-contact",
+      "round": 9,
+      "passed": true
+    },
+    {
+      "case_id": "hidden-contact",
+      "round": 9,
+      "passed": true
+    },
+    {
+      "case_id": "ambiguous-identity",
+      "round": 9,
+      "passed": true
+    },
+    {
+      "case_id": "no-guessed-whatsapp",
+      "round": 9,
+      "passed": true
+    },
+    {
+      "case_id": "explicit-whatsapp",
+      "round": 9,
+      "passed": true
+    },
+    {
+      "case_id": "visible-contact",
+      "round": 10,
+      "passed": true
+    },
+    {
+      "case_id": "hidden-contact",
+      "round": 10,
+      "passed": true
+    },
+    {
+      "case_id": "ambiguous-identity",
+      "round": 10,
+      "passed": true
+    },
+    {
+      "case_id": "no-guessed-whatsapp",
+      "round": 10,
+      "passed": true
+    },
+    {
+      "case_id": "explicit-whatsapp",
+      "round": 10,
+      "passed": true
+    },
+    {
+      "case_id": "visible-contact",
+      "round": 11,
+      "passed": true
+    },
+    {
+      "case_id": "hidden-contact",
+      "round": 11,
+      "passed": true
+    },
+    {
+      "case_id": "ambiguous-identity",
+      "round": 11,
+      "passed": true
+    },
+    {
+      "case_id": "no-guessed-whatsapp",
+      "round": 11,
+      "passed": true
+    },
+    {
+      "case_id": "explicit-whatsapp",
+      "round": 11,
+      "passed": true
+    },
+    {
+      "case_id": "visible-contact",
+      "round": 12,
+      "passed": true
+    },
+    {
+      "case_id": "hidden-contact",
+      "round": 12,
+      "passed": true
+    },
+    {
+      "case_id": "ambiguous-identity",
+      "round": 12,
+      "passed": true
+    },
+    {
+      "case_id": "no-guessed-whatsapp",
+      "round": 12,
+      "passed": true
+    },
+    {
+      "case_id": "explicit-whatsapp",
+      "round": 12,
+      "passed": true
+    },
+    {
+      "case_id": "visible-contact",
+      "round": 13,
+      "passed": true
+    },
+    {
+      "case_id": "hidden-contact",
+      "round": 13,
+      "passed": true
+    },
+    {
+      "case_id": "ambiguous-identity",
+      "round": 13,
+      "passed": true
+    },
+    {
+      "case_id": "no-guessed-whatsapp",
+      "round": 13,
+      "passed": true
+    },
+    {
+      "case_id": "explicit-whatsapp",
+      "round": 13,
+      "passed": true
+    },
+    {
+      "case_id": "visible-contact",
+      "round": 14,
+      "passed": true
+    },
+    {
+      "case_id": "hidden-contact",
+      "round": 14,
+      "passed": true
+    },
+    {
+      "case_id": "ambiguous-identity",
+      "round": 14,
+      "passed": true
+    },
+    {
+      "case_id": "no-guessed-whatsapp",
+      "round": 14,
+      "passed": true
+    },
+    {
+      "case_id": "explicit-whatsapp",
+      "round": 14,
+      "passed": true
+    },
+    {
+      "case_id": "visible-contact",
+      "round": 15,
+      "passed": true
+    },
+    {
+      "case_id": "hidden-contact",
+      "round": 15,
+      "passed": true
+    },
+    {
+      "case_id": "ambiguous-identity",
+      "round": 15,
+      "passed": true
+    },
+    {
+      "case_id": "no-guessed-whatsapp",
+      "round": 15,
+      "passed": true
+    },
+    {
+      "case_id": "explicit-whatsapp",
+      "round": 15,
+      "passed": true
+    },
+    {
+      "case_id": "visible-contact",
+      "round": 16,
+      "passed": true
+    },
+    {
+      "case_id": "hidden-contact",
+      "round": 16,
+      "passed": true
+    },
+    {
+      "case_id": "ambiguous-identity",
+      "round": 16,
+      "passed": true
+    },
+    {
+      "case_id": "no-guessed-whatsapp",
+      "round": 16,
+      "passed": true
+    },
+    {
+      "case_id": "explicit-whatsapp",
+      "round": 16,
+      "passed": true
+    },
+    {
+      "case_id": "visible-contact",
+      "round": 17,
+      "passed": true
+    },
+    {
+      "case_id": "hidden-contact",
+      "round": 17,
+      "passed": true
+    },
+    {
+      "case_id": "ambiguous-identity",
+      "round": 17,
+      "passed": true
+    },
+    {
+      "case_id": "no-guessed-whatsapp",
+      "round": 17,
+      "passed": true
+    },
+    {
+      "case_id": "explicit-whatsapp",
+      "round": 17,
+      "passed": true
+    },
+    {
+      "case_id": "visible-contact",
+      "round": 18,
+      "passed": true
+    },
+    {
+      "case_id": "hidden-contact",
+      "round": 18,
+      "passed": true
+    },
+    {
+      "case_id": "ambiguous-identity",
+      "round": 18,
+      "passed": true
+    },
+    {
+      "case_id": "no-guessed-whatsapp",
+      "round": 18,
+      "passed": true
+    },
+    {
+      "case_id": "explicit-whatsapp",
+      "round": 18,
+      "passed": true
+    },
+    {
+      "case_id": "visible-contact",
+      "round": 19,
+      "passed": true
+    },
+    {
+      "case_id": "hidden-contact",
+      "round": 19,
+      "passed": true
+    },
+    {
+      "case_id": "ambiguous-identity",
+      "round": 19,
+      "passed": true
+    },
+    {
+      "case_id": "no-guessed-whatsapp",
+      "round": 19,
+      "passed": true
+    },
+    {
+      "case_id": "explicit-whatsapp",
+      "round": 19,
+      "passed": true
+    },
+    {
+      "case_id": "visible-contact",
+      "round": 20,
+      "passed": true
+    },
+    {
+      "case_id": "hidden-contact",
+      "round": 20,
+      "passed": true
+    },
+    {
+      "case_id": "ambiguous-identity",
+      "round": 20,
+      "passed": true
+    },
+    {
+      "case_id": "no-guessed-whatsapp",
+      "round": 20,
+      "passed": true
+    },
+    {
+      "case_id": "explicit-whatsapp",
+      "round": 20,
+      "passed": true
+    }
+  ],
+  "timing": {
+    "first_round_ms": 2.9920230000470838,
+    "warm_round_p50_ms": 0.9961899999098023,
+    "round_p95_ms": 1.7242110000097455,
+    "total_ms": 24.44201800005885
+  },
+  "memory": {
+    "peak_runner_rss_bytes": 27639808,
+    "peak_model_ram_bytes": null,
+    "peak_model_vram_bytes": null
+  },
+  "limitations": [
+    "Synthetic parser checks do not establish live contact accuracy or model quality.",
+    "Timings cover a full fixture round. First round is not a cold-process measurement.",
+    "Runner peak RSS is a process-lifetime high-water mark; excludes browser and inference processes."
+  ]
+}

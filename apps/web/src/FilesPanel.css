@@ -1,0 +1,16 @@
+.files-panel { display: grid; gap: 22px; }
+.files-panel .panel { min-width: 0; }
+.files-panel input, .files-panel select, .files-panel textarea { width: 100%; max-width: 100%; }
+.files-panel textarea { min-height: 110px; resize: vertical; }
+.files-panel form > button { margin-top: 14px; }
+.files-panel label { margin-top: 16px; }
+.local-actions { display: flex; gap: 10px; flex-wrap: wrap; margin: 14px 0; }
+.local-path, .file-match blockquote, .memory-note p, .local-choice p { overflow-wrap: anywhere; white-space: pre-wrap; }
+.local-matches, .memory-list { display: grid; gap: 16px; margin-top: 18px; }
+.file-match, .memory-note, .local-confirm { padding: 16px; border: 1px solid var(--line, #dce5df); border-radius: 10px; }
+.file-match h3 { margin-top: 0; }
+.file-match small, .memory-note small { display: block; overflow-wrap: anywhere; }
+.files-panel .local-check { display: flex; align-items: center; gap: 10px; }
+.files-panel .local-check input { width: auto; }
+.file-preview { margin-top: 20px; }
+.file-preview pre { white-space: pre-wrap; overflow-wrap: anywhere; max-height: 440px; overflow: auto; padding: 16px; background: #f4f7f5; }

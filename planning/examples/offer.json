@@ -1,0 +1,9 @@
+{
+  "offer": "Inventory review and stock reconciliation",
+  "target_geography": "Your chosen city or region",
+  "problem": "Manual stock records can disagree with physical inventory",
+  "capabilities": ["Review existing records", "Document discrepancies"],
+  "service_geography": null,
+  "exclusions": [],
+  "price": null
+}

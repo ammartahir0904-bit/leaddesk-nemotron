@@ -1,0 +1,12 @@
+.workers-panel { display: grid; gap: 20px; min-width: 0; }
+.workers-panel form { display: grid; gap: 10px; margin-top: 18px; }
+.workers-panel form button { justify-self: start; }
+.workers-panel select, .workers-panel input { max-width: 100%; min-width: 0; width: 100%; }
+.workers-panel select { border: 1px solid var(--border, #dce4e0); border-radius: 8px; padding: 12px; background: white; }
+.worker-card { padding: 16px 0; border-top: 1px solid var(--border, #dce4e0); }
+.worker-card h3 { margin-top: 0; }
+.worker-card small { overflow-wrap: anywhere; }
+.worker-actions { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 12px; }
+.workers-panel pre { max-width: 100%; overflow-x: auto; white-space: pre-wrap; overflow-wrap: anywhere; padding: 14px; background: #f2f6f4; border-radius: 8px; font-size: 12px; }
+.worker-credential button { margin: 0 10px 10px 0; }
+.worker-result { min-width: 0; }

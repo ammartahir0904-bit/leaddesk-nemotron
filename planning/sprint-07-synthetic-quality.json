@@ -1,0 +1,2653 @@
+{
+  "id": "19d2f20d-b501-48e4-bcab-d44910ed2dbe",
+  "name": "Six fictional source-audit examples",
+  "mode": "synthetic",
+  "split": "development",
+  "created_at": "2026-10-19T15:39:18.774914+00:00",
+  "dataset_sha256": "20299a73a33652c9f1da2af7ceab2dc40b5a2cd5f4ffefa85eda31d9b6b76735",
+  "schema_version": 1,
+  "rubric_version": 1,
+  "hardware": {
+    "schema_version": 1,
+    "measured_at": "2026-10-19T15:39:18.771377+00:00",
+    "os": {
+      "system": "Linux",
+      "release": "6.8.0-136-generic",
+      "architecture": "x86_64",
+      "session": "wayland",
+      "python": "3.12.3"
+    },
+    "cpu": {
+      "model": "Intel(R) Core(TM) i5-8265U CPU @ 1.60GHz",
+      "logical_cores": 8
+    },
+    "memory": {
+      "total_bytes": 7997210624,
+      "available_bytes": 2901565440,
+      "swap_total_bytes": 8589930496,
+      "swap_free_bytes": 7768895488,
+      "cgroup_limit_bytes": null,
+      "cgroup_current_bytes": null,
+      "effective_available_bytes": 2901565440,
+      "reason": null
+    },
+    "disk": {
+      "total_bytes": 250375106560,
+      "free_bytes": 70732955648,
+      "reason": null
+    },
+    "gpu": {
+      "devices": [
+        {
+          "vendor_id": "0x8086",
+          "device_id": "0x3ea0",
+          "driver": "i915",
+          "vram_bytes": null,
+          "vram_reason": "Dedicated VRAM is not exposed by this driver; shared memory is not dedicated VRAM.",
+          "inference_support": "Not tested. Device presence does not establish runtime compatibility."
+        }
+      ],
+      "reason": null
+    },
+    "execution": {
+      "mode": "cpu",
+      "concurrency": 1,
+      "cloud_enabled": false,
+      "remote_enabled": false,
+      "model": null,
+      "model_reason": "No model selected or benchmarked. No model size is recommended from hardware alone.",
+      "reserve_bytes": 2147483648
+    },
+    "limitations": [
+      "Resource values are a point-in-time snapshot.",
+      "GPU inference, model fit and full application process-tree memory have not been measured."
+    ]
+  },
+  "model_hash": null,
+  "model_reason": "No model invoked by this source-audit workflow; prior record generation is not benchmarked here.",
+  "configuration": {
+    "method": "manual_saved_source_audit",
+    "max_cases": 100,
+    "selection": "user_selected_distinct_source_urls",
+    "rubric_version": 1,
+    "capture_code_sha256": "7b21ab1b46cfaf7eff03951f7853dabea3bda2cd87d3388ad7df0975faf2347c"
+  },
+  "cases": [
+    {
+      "research_id": "27f3c8f8-b71e-455e-934f-ea9340ed4afd",
+      "ordinal": 0,
+      "snapshot_sha256": "cc7c90983f3f4797f52cc1577ab5664f6974afea6955ed390028c2aaf09c3a2b",
+      "snapshot": {
+        "research": {
+          "id": "27f3c8f8-b71e-455e-934f-ea9340ed4afd",
+          "product": "Appointment support",
+          "geography": "Fictional North",
+          "created_at": "2026-10-19T15:39:18.519530+00:00",
+          "synthetic": true,
+          "business_id": "c4598598-af42-4c72-bb89-4ba5e953f9cd",
+          "canonical_name": "Fictional audit source 1",
+          "source_url": "https://quality-fixture-1.example/",
+          "identity_status": "source_attributed",
+          "assessment": {
+            "identity": {
+              "document": {
+                "decision": "source_attributed",
+                "source_role": "business",
+                "business_name": {
+                  "value": "Fictional audit source 1",
+                  "evidence_ids": [
+                    "a85e5aa6-e689-4711-aa5e-89c72130ad62"
+                  ]
+                },
+                "branch": null,
+                "address": {
+                  "value": "Fictional North",
+                  "evidence_ids": [
+                    "f5dc6bfd-cbb3-48f8-a39e-efc522ef7a0c"
+                  ]
+                },
+                "service_area": null,
+                "geography": "matches",
+                "exclusions": "clear",
+                "exclusion_reason": "Fixture-authored prediction to exercise the audit.",
+                "contact_reviews": [
+                  {
+                    "contact_id": "092205b8-8ec1-4029-ae48-b287a0d4ab3c",
+                    "decision": "attributed",
+                    "evidence_ids": [
+                      "b280aaae-c83f-477d-9db0-50e3538ed6bc"
+                    ]
+                  }
+                ],
+                "comparisons": [],
+                "notes": ""
+              },
+              "comparison_signatures": {},
+              "revision": 1,
+              "updated_at": "2026-10-19T15:39:18.539611+00:00",
+              "method": "manual_review"
+            },
+            "analysis": null,
+            "identity_blockers": [],
+            "analysis_state": "not_reviewed",
+            "analysis_review_reasons": [],
+            "related_scope": "Up to 200 recent records, 20 related source pages; same-page repeats and synthetic/live records are kept separate. Signals are comparison hints, not identity proof.",
+            "intent_state": "unknown",
+            "budget": null,
+            "scope": "Source-reviewed judgements and hypotheses; no corroboration, reachability, buying interest or outreach approval is established."
+          },
+          "product_brief": null,
+          "evidence": [
+            {
+              "id": "a85e5aa6-e689-4711-aa5e-89c72130ad62",
+              "business_id": "c4598598-af42-4c72-bb89-4ba5e953f9cd",
+              "source_url": "https://quality-fixture-1.example/",
+              "retrieved_at": "2026-10-19T15:39:18.519530+00:00",
+              "content_hash": "8cfe33787ee2d1c9a21aac8c53c09f8e8f24d7aa8c042983bd6ee59be25f8af8",
+              "excerpt": "Fictional audit source 1",
+              "extraction_method": "visible_html_v1"
+            },
+            {
+              "id": "b280aaae-c83f-477d-9db0-50e3538ed6bc",
+              "business_id": "c4598598-af42-4c72-bb89-4ba5e953f9cd",
+              "source_url": "https://quality-fixture-1.example/",
+              "retrieved_at": "2026-10-19T15:39:18.519530+00:00",
+              "content_hash": "8cfe33787ee2d1c9a21aac8c53c09f8e8f24d7aa8c042983bd6ee59be25f8af8",
+              "excerpt": "Phone: +1 202-555-0110.",
+              "extraction_method": "visible_html_v1"
+            },
+            {
+              "id": "f5dc6bfd-cbb3-48f8-a39e-efc522ef7a0c",
+              "business_id": "c4598598-af42-4c72-bb89-4ba5e953f9cd",
+              "source_url": "https://quality-fixture-1.example/",
+              "retrieved_at": "2026-10-19T15:39:18.519530+00:00",
+              "content_hash": "8cfe33787ee2d1c9a21aac8c53c09f8e8f24d7aa8c042983bd6ee59be25f8af8",
+              "excerpt": "Location: Fictional North.",
+              "extraction_method": "visible_text_context_v1"
+            },
+            {
+              "id": "5c8e3626-20a7-4e48-ad9f-5f4c5b91cc1b",
+              "business_id": "c4598598-af42-4c72-bb89-4ba5e953f9cd",
+              "source_url": "https://quality-fixture-1.example/",
+              "retrieved_at": "2026-10-19T15:39:18.519530+00:00",
+              "content_hash": "8cfe33787ee2d1c9a21aac8c53c09f8e8f24d7aa8c042983bd6ee59be25f8af8",
+              "excerpt": "Bookings are handled manually and appointments can overlap.",
+              "extraction_method": "visible_text_context_v1"
+            }
+          ],
+          "claims": [
+            {
+              "id": "a42096ec-de35-4c5b-8c26-4afc5c40887f",
+              "business_id": "c4598598-af42-4c72-bb89-4ba5e953f9cd",
+              "predicate": "source_heading",
+              "value": "Fictional audit source 1",
+              "evidence_id": "a85e5aa6-e689-4711-aa5e-89c72130ad62",
+              "inference_flag": 0
+            }
+          ],
+          "contacts": [
+            {
+              "id": "092205b8-8ec1-4029-ae48-b287a0d4ab3c",
+              "business_id": "c4598598-af42-4c72-bb89-4ba5e953f9cd",
+              "type": "phone",
+              "raw_value": "+1 202-555-0110",
+              "normalised_value": "+12025550110",
+              "attribution_state": "attributed",
+              "suppressed": false,
+              "last_checked_at": "2026-10-19T15:39:18.519530+00:00",
+              "evidence_ids": [
+                "b280aaae-c83f-477d-9db0-50e3538ed6bc"
+              ],
+              "review_blocked": false,
+              "attribution_reviewed_at": "2026-10-19T15:39:18.539611+00:00"
+            }
+          ],
+          "feedback": [],
+          "unknowns": {
+            "official_business_identity": "Source identity has a manual review; official ownership and independent corroboration are not established.",
+            "business_location": "Cited source location text is saved in the review; geographic matching remains a reviewer judgement, not an independently verified address.",
+            "contact_ownership": "Contacts appear on this page; ownership, role and reachability require review.",
+            "contact_format": "Phone-like text is a candidate number, not a validity check. Local numbers retain source formatting because no country is assumed.",
+            "buying_intent": "Not established by contact extraction.",
+            "budget": "No evidence of budget has been collected.",
+            "product_fit": "No grounded need analysis has been reviewed for this record."
+          },
+          "coverage": "One supplied page; linked pages and JavaScript-rendered content are not inspected."
+        },
+        "lead": {
+          "id": "27f3c8f8-b71e-455e-934f-ea9340ed4afd",
+          "synthetic": true,
+          "created_at": "2026-10-19T15:39:18.519530+00:00",
+          "source_url": "https://quality-fixture-1.example/",
+          "source_heading": "Fictional audit source 1",
+          "business_name": "Fictional audit source 1",
+          "branch": null,
+          "address": "Fictional North",
+          "service_area": null,
+          "identity_status": "source_attributed",
+          "identity_reviewed_at": "2026-10-19T15:39:18.539611+00:00",
+          "product": "Appointment support",
+          "target_geography": "Fictional North",
+          "contacts": [
+            {
+              "id": "092205b8-8ec1-4029-ae48-b287a0d4ab3c",
+              "business_id": "c4598598-af42-4c72-bb89-4ba5e953f9cd",
+              "type": "phone",
+              "raw_value": "+1 202-555-0110",
+              "normalised_value": "+12025550110",
+              "attribution_state": "attributed",
+              "suppressed": false,
+              "last_checked_at": "2026-10-19T15:39:18.519530+00:00",
+              "evidence_ids": [
+                "b280aaae-c83f-477d-9db0-50e3538ed6bc"
+              ],
+              "review_blocked": false,
+              "attribution_reviewed_at": "2026-10-19T15:39:18.539611+00:00",
+              "excluded": false,
+              "effective_state": "attributed",
+              "exclusion_reasons": [],
+              "evidence": [
+                {
+                  "id": "b280aaae-c83f-477d-9db0-50e3538ed6bc",
+                  "business_id": "c4598598-af42-4c72-bb89-4ba5e953f9cd",
+                  "source_url": "https://quality-fixture-1.example/",
+                  "retrieved_at": "2026-10-19T15:39:18.519530+00:00",
+                  "content_hash": "8cfe33787ee2d1c9a21aac8c53c09f8e8f24d7aa8c042983bd6ee59be25f8af8",
+                  "excerpt": "Phone: +1 202-555-0110.",
+                  "extraction_method": "visible_html_v1"
+                }
+              ],
+              "reachability": "unknown",
+              "outreach_approved": false
+            }
+          ],
+          "analysis_state": "not_reviewed",
+          "saved_fit": "unknown",
+          "effective_fit": "unknown",
+          "analysis_reviewed_at": null,
+          "need_hypothesis": null,
+          "analysis_interpretation": "No need analysis has been reviewed.",
+          "review_state": "needs_review",
+          "review_reasons": [
+            "Need and offer relevance have not been reviewed."
+          ],
+          "exclusion_reasons": [],
+          "next_action": "Review need, offer relevance and existing alternatives.",
+          "intent_state": "unknown",
+          "budget": null,
+          "budget_reason": "No documented prospect interaction establishes a budget.",
+          "outreach_approved": false
+        },
+        "units": [
+          {
+            "id": "claim:a42096ec-de35-4c5b-8c26-4afc5c40887f",
+            "label": "Source heading",
+            "value": "Fictional audit source 1",
+            "evidence_ids": [
+              "a85e5aa6-e689-4711-aa5e-89c72130ad62"
+            ]
+          },
+          {
+            "id": "contact:092205b8-8ec1-4029-ae48-b287a0d4ab3c",
+            "label": "Source publishes contact (ownership separate)",
+            "value": "+1 202-555-0110",
+            "evidence_ids": [
+              "b280aaae-c83f-477d-9db0-50e3538ed6bc"
+            ]
+          },
+          {
+            "id": "identity:business_name",
+            "label": "Quoted business name",
+            "value": "Fictional audit source 1",
+            "evidence_ids": [
+              "a85e5aa6-e689-4711-aa5e-89c72130ad62"
+            ]
+          },
+          {
+            "id": "identity:address",
+            "label": "Quoted address",
+            "value": "Fictional North",
+            "evidence_ids": [
+              "f5dc6bfd-cbb3-48f8-a39e-efc522ef7a0c"
+            ]
+          }
+        ],
+        "comparison_sources": []
+      },
+      "source_changed_since_snapshot": false,
+      "audit": {
+        "revision": 1,
+        "updated_at": "2026-10-19T15:39:18.810717+00:00",
+        "document": {
+          "reviewer": "Fixture author · Synthetic demonstration",
+          "identity": {
+            "outcome": "pass",
+            "evidence_ids": [
+              "a85e5aa6-e689-4711-aa5e-89c72130ad62"
+            ],
+            "reason": "Authored fictional example only; inspect the scenario text. This is not a real manual review."
+          },
+          "relevance": {
+            "outcome": "pass",
+            "evidence_ids": [
+              "a85e5aa6-e689-4711-aa5e-89c72130ad62"
+            ],
+            "reason": "Authored fictional example only; inspect the scenario text. This is not a real manual review."
+          },
+          "contacts": [
+            {
+              "outcome": "pass",
+              "evidence_ids": [
+                "b280aaae-c83f-477d-9db0-50e3538ed6bc"
+              ],
+              "reason": "Authored fictional example only; inspect the scenario text. This is not a real manual review.",
+              "target_id": "092205b8-8ec1-4029-ae48-b287a0d4ab3c"
+            }
+          ],
+          "claims": [
+            {
+              "outcome": "pass",
+              "evidence_ids": [
+                "a85e5aa6-e689-4711-aa5e-89c72130ad62"
+              ],
+              "reason": "Authored fictional example only; inspect the scenario text. This is not a real manual review.",
+              "target_id": "claim:a42096ec-de35-4c5b-8c26-4afc5c40887f"
+            },
+            {
+              "outcome": "pass",
+              "evidence_ids": [
+                "b280aaae-c83f-477d-9db0-50e3538ed6bc"
+              ],
+              "reason": "Authored fictional example only; inspect the scenario text. This is not a real manual review.",
+              "target_id": "contact:092205b8-8ec1-4029-ae48-b287a0d4ab3c"
+            },
+            {
+              "outcome": "pass",
+              "evidence_ids": [
+                "a85e5aa6-e689-4711-aa5e-89c72130ad62"
+              ],
+              "reason": "Authored fictional example only; inspect the scenario text. This is not a real manual review.",
+              "target_id": "identity:business_name"
+            },
+            {
+              "outcome": "pass",
+              "evidence_ids": [
+                "f5dc6bfd-cbb3-48f8-a39e-efc522ef7a0c"
+              ],
+              "reason": "Authored fictional example only; inspect the scenario text. This is not a real manual review.",
+              "target_id": "identity:address"
+            }
+          ],
+          "issue_tags": [
+            "positive_fit"
+          ],
+          "notes": "Deliberately includes erroneous fixture-authored predictions and unknown relevance. No real prospect or buying interest is represented."
+        }
+      }
+    },
+    {
+      "research_id": "667f5edb-6261-430c-8dee-600c5132ad5a",
+      "ordinal": 1,
+      "snapshot_sha256": "6292734765630b3979af1391db1517cb416fc185633f580ebb7912f176b59911",
+      "snapshot": {
+        "research": {
+          "id": "667f5edb-6261-430c-8dee-600c5132ad5a",
+          "product": "Appointment support",
+          "geography": "Fictional South",
+          "created_at": "2026-10-19T15:39:18.554969+00:00",
+          "synthetic": true,
+          "business_id": "fa167630-9403-4b50-b816-92118e782a8a",
+          "canonical_name": "Fictional audit source 2",
+          "source_url": "https://quality-fixture-2.example/",
+          "identity_status": "source_attributed",
+          "assessment": {
+            "identity": {
+              "document": {
+                "decision": "source_attributed",
+                "source_role": "business",
+                "business_name": {
+                  "value": "Fictional audit source 2",
+                  "evidence_ids": [
+                    "4b2558c2-cdd2-4da7-9f4f-1bcfad33fad2"
+                  ]
+                },
+                "branch": null,
+                "address": {
+                  "value": "Fictional South",
+                  "evidence_ids": [
+                    "983c729b-6306-494c-b878-53f39a37fa2a"
+                  ]
+                },
+                "service_area": null,
+                "geography": "matches",
+                "exclusions": "clear",
+                "exclusion_reason": "Fixture-authored prediction to exercise the audit.",
+                "contact_reviews": [
+                  {
+                    "contact_id": "0c271bdc-1903-426c-bafd-525367b6085a",
+                    "decision": "attributed",
+                    "evidence_ids": [
+                      "eb621d2b-bb30-4a86-8baa-3e502681eed7"
+                    ]
+                  }
+                ],
+                "comparisons": [],
+                "notes": ""
+              },
+              "comparison_signatures": {},
+              "revision": 1,
+              "updated_at": "2026-10-19T15:39:18.574980+00:00",
+              "method": "manual_review"
+            },
+            "analysis": null,
+            "identity_blockers": [],
+            "analysis_state": "not_reviewed",
+            "analysis_review_reasons": [],
+            "related_scope": "Up to 200 recent records, 20 related source pages; same-page repeats and synthetic/live records are kept separate. Signals are comparison hints, not identity proof.",
+            "intent_state": "unknown",
+            "budget": null,
+            "scope": "Source-reviewed judgements and hypotheses; no corroboration, reachability, buying interest or outreach approval is established."
+          },
+          "product_brief": null,
+          "evidence": [
+            {
+              "id": "4b2558c2-cdd2-4da7-9f4f-1bcfad33fad2",
+              "business_id": "fa167630-9403-4b50-b816-92118e782a8a",
+              "source_url": "https://quality-fixture-2.example/",
+              "retrieved_at": "2026-10-19T15:39:18.554969+00:00",
+              "content_hash": "4361d6cbaf2c4eca8b4c2bd2a1d434bd88bd4dcee35fa424993a47a67da535da",
+              "excerpt": "Fictional audit source 2",
+              "extraction_method": "visible_html_v1"
+            },
+            {
+              "id": "eb621d2b-bb30-4a86-8baa-3e502681eed7",
+              "business_id": "fa167630-9403-4b50-b816-92118e782a8a",
+              "source_url": "https://quality-fixture-2.example/",
+              "retrieved_at": "2026-10-19T15:39:18.554969+00:00",
+              "content_hash": "4361d6cbaf2c4eca8b4c2bd2a1d434bd88bd4dcee35fa424993a47a67da535da",
+              "excerpt": "Phone: +1 202-555-0111.",
+              "extraction_method": "visible_html_v1"
+            },
+            {
+              "id": "983c729b-6306-494c-b878-53f39a37fa2a",
+              "business_id": "fa167630-9403-4b50-b816-92118e782a8a",
+              "source_url": "https://quality-fixture-2.example/",
+              "retrieved_at": "2026-10-19T15:39:18.554969+00:00",
+              "content_hash": "4361d6cbaf2c4eca8b4c2bd2a1d434bd88bd4dcee35fa424993a47a67da535da",
+              "excerpt": "Location: Fictional South.",
+              "extraction_method": "visible_text_context_v1"
+            },
+            {
+              "id": "048e830b-1b97-47c4-96d9-2a2caa2d0980",
+              "business_id": "fa167630-9403-4b50-b816-92118e782a8a",
+              "source_url": "https://quality-fixture-2.example/",
+              "retrieved_at": "2026-10-19T15:39:18.554969+00:00",
+              "content_hash": "4361d6cbaf2c4eca8b4c2bd2a1d434bd88bd4dcee35fa424993a47a67da535da",
+              "excerpt": "An existing booking provider handles all appointment work.",
+              "extraction_method": "visible_text_context_v1"
+            }
+          ],
+          "claims": [
+            {
+              "id": "2d1dbda7-ec3b-447b-88ec-e3d3ba45edab",
+              "business_id": "fa167630-9403-4b50-b816-92118e782a8a",
+              "predicate": "source_heading",
+              "value": "Fictional audit source 2",
+              "evidence_id": "4b2558c2-cdd2-4da7-9f4f-1bcfad33fad2",
+              "inference_flag": 0
+            }
+          ],
+          "contacts": [
+            {
+              "id": "0c271bdc-1903-426c-bafd-525367b6085a",
+              "business_id": "fa167630-9403-4b50-b816-92118e782a8a",
+              "type": "phone",
+              "raw_value": "+1 202-555-0111",
+              "normalised_value": "+12025550111",
+              "attribution_state": "attributed",
+              "suppressed": false,
+              "last_checked_at": "2026-10-19T15:39:18.554969+00:00",
+              "evidence_ids": [
+                "eb621d2b-bb30-4a86-8baa-3e502681eed7"
+              ],
+              "review_blocked": false,
+              "attribution_reviewed_at": "2026-10-19T15:39:18.574980+00:00"
+            }
+          ],
+          "feedback": [],
+          "unknowns": {
+            "official_business_identity": "Source identity has a manual review; official ownership and independent corroboration are not established.",
+            "business_location": "Cited source location text is saved in the review; geographic matching remains a reviewer judgement, not an independently verified address.",
+            "contact_ownership": "Contacts appear on this page; ownership, role and reachability require review.",
+            "contact_format": "Phone-like text is a candidate number, not a validity check. Local numbers retain source formatting because no country is assumed.",
+            "buying_intent": "Not established by contact extraction.",
+            "budget": "No evidence of budget has been collected.",
+            "product_fit": "No grounded need analysis has been reviewed for this record."
+          },
+          "coverage": "One supplied page; linked pages and JavaScript-rendered content are not inspected."
+        },
+        "lead": {
+          "id": "667f5edb-6261-430c-8dee-600c5132ad5a",
+          "synthetic": true,
+          "created_at": "2026-10-19T15:39:18.554969+00:00",
+          "source_url": "https://quality-fixture-2.example/",
+          "source_heading": "Fictional audit source 2",
+          "business_name": "Fictional audit source 2",
+          "branch": null,
+          "address": "Fictional South",
+          "service_area": null,
+          "identity_status": "source_attributed",
+          "identity_reviewed_at": "2026-10-19T15:39:18.574980+00:00",
+          "product": "Appointment support",
+          "target_geography": "Fictional South",
+          "contacts": [
+            {
+              "id": "0c271bdc-1903-426c-bafd-525367b6085a",
+              "business_id": "fa167630-9403-4b50-b816-92118e782a8a",
+              "type": "phone",
+              "raw_value": "+1 202-555-0111",
+              "normalised_value": "+12025550111",
+              "attribution_state": "attributed",
+              "suppressed": false,
+              "last_checked_at": "2026-10-19T15:39:18.554969+00:00",
+              "evidence_ids": [
+                "eb621d2b-bb30-4a86-8baa-3e502681eed7"
+              ],
+              "review_blocked": false,
+              "attribution_reviewed_at": "2026-10-19T15:39:18.574980+00:00",
+              "excluded": false,
+              "effective_state": "attributed",
+              "exclusion_reasons": [],
+              "evidence": [
+                {
+                  "id": "eb621d2b-bb30-4a86-8baa-3e502681eed7",
+                  "business_id": "fa167630-9403-4b50-b816-92118e782a8a",
+                  "source_url": "https://quality-fixture-2.example/",
+                  "retrieved_at": "2026-10-19T15:39:18.554969+00:00",
+                  "content_hash": "4361d6cbaf2c4eca8b4c2bd2a1d434bd88bd4dcee35fa424993a47a67da535da",
+                  "excerpt": "Phone: +1 202-555-0111.",
+                  "extraction_method": "visible_html_v1"
+                }
+              ],
+              "reachability": "unknown",
+              "outreach_approved": false
+            }
+          ],
+          "analysis_state": "not_reviewed",
+          "saved_fit": "unknown",
+          "effective_fit": "unknown",
+          "analysis_reviewed_at": null,
+          "need_hypothesis": null,
+          "analysis_interpretation": "No need analysis has been reviewed.",
+          "review_state": "needs_review",
+          "review_reasons": [
+            "Need and offer relevance have not been reviewed."
+          ],
+          "exclusion_reasons": [],
+          "next_action": "Review need, offer relevance and existing alternatives.",
+          "intent_state": "unknown",
+          "budget": null,
+          "budget_reason": "No documented prospect interaction establishes a budget.",
+          "outreach_approved": false
+        },
+        "units": [
+          {
+            "id": "claim:2d1dbda7-ec3b-447b-88ec-e3d3ba45edab",
+            "label": "Source heading",
+            "value": "Fictional audit source 2",
+            "evidence_ids": [
+              "4b2558c2-cdd2-4da7-9f4f-1bcfad33fad2"
+            ]
+          },
+          {
+            "id": "contact:0c271bdc-1903-426c-bafd-525367b6085a",
+            "label": "Source publishes contact (ownership separate)",
+            "value": "+1 202-555-0111",
+            "evidence_ids": [
+              "eb621d2b-bb30-4a86-8baa-3e502681eed7"
+            ]
+          },
+          {
+            "id": "identity:business_name",
+            "label": "Quoted business name",
+            "value": "Fictional audit source 2",
+            "evidence_ids": [
+              "4b2558c2-cdd2-4da7-9f4f-1bcfad33fad2"
+            ]
+          },
+          {
+            "id": "identity:address",
+            "label": "Quoted address",
+            "value": "Fictional South",
+            "evidence_ids": [
+              "983c729b-6306-494c-b878-53f39a37fa2a"
+            ]
+          }
+        ],
+        "comparison_sources": []
+      },
+      "source_changed_since_snapshot": false,
+      "audit": {
+        "revision": 1,
+        "updated_at": "2026-10-19T15:39:18.839215+00:00",
+        "document": {
+          "reviewer": "Fixture author · Synthetic demonstration",
+          "identity": {
+            "outcome": "pass",
+            "evidence_ids": [
+              "4b2558c2-cdd2-4da7-9f4f-1bcfad33fad2"
+            ],
+            "reason": "Authored fictional example only; inspect the scenario text. This is not a real manual review."
+          },
+          "relevance": {
+            "outcome": "fail",
+            "evidence_ids": [
+              "4b2558c2-cdd2-4da7-9f4f-1bcfad33fad2"
+            ],
+            "reason": "Authored fictional example only; inspect the scenario text. This is not a real manual review."
+          },
+          "contacts": [
+            {
+              "outcome": "pass",
+              "evidence_ids": [
+                "eb621d2b-bb30-4a86-8baa-3e502681eed7"
+              ],
+              "reason": "Authored fictional example only; inspect the scenario text. This is not a real manual review.",
+              "target_id": "0c271bdc-1903-426c-bafd-525367b6085a"
+            }
+          ],
+          "claims": [
+            {
+              "outcome": "pass",
+              "evidence_ids": [
+                "4b2558c2-cdd2-4da7-9f4f-1bcfad33fad2"
+              ],
+              "reason": "Authored fictional example only; inspect the scenario text. This is not a real manual review.",
+              "target_id": "claim:2d1dbda7-ec3b-447b-88ec-e3d3ba45edab"
+            },
+            {
+              "outcome": "pass",
+              "evidence_ids": [
+                "eb621d2b-bb30-4a86-8baa-3e502681eed7"
+              ],
+              "reason": "Authored fictional example only; inspect the scenario text. This is not a real manual review.",
+              "target_id": "contact:0c271bdc-1903-426c-bafd-525367b6085a"
+            },
+            {
+              "outcome": "pass",
+              "evidence_ids": [
+                "4b2558c2-cdd2-4da7-9f4f-1bcfad33fad2"
+              ],
+              "reason": "Authored fictional example only; inspect the scenario text. This is not a real manual review.",
+              "target_id": "identity:business_name"
+            },
+            {
+              "outcome": "pass",
+              "evidence_ids": [
+                "983c729b-6306-494c-b878-53f39a37fa2a"
+              ],
+              "reason": "Authored fictional example only; inspect the scenario text. This is not a real manual review.",
+              "target_id": "identity:address"
+            }
+          ],
+          "issue_tags": [
+            "existing_solution"
+          ],
+          "notes": "Deliberately includes erroneous fixture-authored predictions and unknown relevance. No real prospect or buying interest is represented."
+        }
+      }
+    },
+    {
+      "research_id": "14e30d71-bb7d-4a06-8b2c-85d51520d12c",
+      "ordinal": 2,
+      "snapshot_sha256": "c871f7357f1ea214609513a999aa9be422477d01ddbe77d2fabf1d735e071c5d",
+      "snapshot": {
+        "research": {
+          "id": "14e30d71-bb7d-4a06-8b2c-85d51520d12c",
+          "product": "Stock planning",
+          "geography": "Fictional North",
+          "created_at": "2026-10-19T15:39:18.588980+00:00",
+          "synthetic": true,
+          "business_id": "142aa0c7-633f-4918-a934-0be7fc0dea35",
+          "canonical_name": "Fictional audit source 3",
+          "source_url": "https://quality-fixture-3.example/",
+          "identity_status": "source_attributed",
+          "assessment": {
+            "identity": {
+              "document": {
+                "decision": "source_attributed",
+                "source_role": "business",
+                "business_name": {
+                  "value": "Fictional audit source 3",
+                  "evidence_ids": [
+                    "961b9204-cf41-4a29-bc7d-b51296aa1726"
+                  ]
+                },
+                "branch": null,
+                "address": {
+                  "value": "Fictional North",
+                  "evidence_ids": [
+                    "59de831b-c7e4-4036-8b5e-49de34a8eaca"
+                  ]
+                },
+                "service_area": null,
+                "geography": "matches",
+                "exclusions": "clear",
+                "exclusion_reason": "Fixture-authored prediction to exercise the audit.",
+                "contact_reviews": [
+                  {
+                    "contact_id": "a5dd0cf3-74f5-4e13-829f-0ea9cd7e0dec",
+                    "decision": "attributed",
+                    "evidence_ids": [
+                      "1e42742f-d396-48ae-a3f2-0b6180d78568"
+                    ]
+                  }
+                ],
+                "comparisons": [],
+                "notes": ""
+              },
+              "comparison_signatures": {},
+              "revision": 1,
+              "updated_at": "2026-10-19T15:39:18.607676+00:00",
+              "method": "manual_review"
+            },
+            "analysis": null,
+            "identity_blockers": [],
+            "analysis_state": "not_reviewed",
+            "analysis_review_reasons": [],
+            "related_scope": "Up to 200 recent records, 20 related source pages; same-page repeats and synthetic/live records are kept separate. Signals are comparison hints, not identity proof.",
+            "intent_state": "unknown",
+            "budget": null,
+            "scope": "Source-reviewed judgements and hypotheses; no corroboration, reachability, buying interest or outreach approval is established."
+          },
+          "product_brief": null,
+          "evidence": [
+            {
+              "id": "961b9204-cf41-4a29-bc7d-b51296aa1726",
+              "business_id": "142aa0c7-633f-4918-a934-0be7fc0dea35",
+              "source_url": "https://quality-fixture-3.example/",
+              "retrieved_at": "2026-10-19T15:39:18.588980+00:00",
+              "content_hash": "c619fa034d81e2ead8f495b0895c153ceda811ab4bc3dae4503853a25584efa5",
+              "excerpt": "Fictional audit source 3",
+              "extraction_method": "visible_html_v1"
+            },
+            {
+              "id": "1e42742f-d396-48ae-a3f2-0b6180d78568",
+              "business_id": "142aa0c7-633f-4918-a934-0be7fc0dea35",
+              "source_url": "https://quality-fixture-3.example/",
+              "retrieved_at": "2026-10-19T15:39:18.588980+00:00",
+              "content_hash": "c619fa034d81e2ead8f495b0895c153ceda811ab4bc3dae4503853a25584efa5",
+              "excerpt": "Phone: +1 202-555-0112.",
+              "extraction_method": "visible_html_v1"
+            },
+            {
+              "id": "59de831b-c7e4-4036-8b5e-49de34a8eaca",
+              "business_id": "142aa0c7-633f-4918-a934-0be7fc0dea35",
+              "source_url": "https://quality-fixture-3.example/",
+              "retrieved_at": "2026-10-19T15:39:18.588980+00:00",
+              "content_hash": "c619fa034d81e2ead8f495b0895c153ceda811ab4bc3dae4503853a25584efa5",
+              "excerpt": "Location: Fictional North.",
+              "extraction_method": "visible_text_context_v1"
+            },
+            {
+              "id": "7ddd4eb7-d54e-4c58-8c92-4ebb56a8328a",
+              "business_id": "142aa0c7-633f-4918-a934-0be7fc0dea35",
+              "source_url": "https://quality-fixture-3.example/",
+              "retrieved_at": "2026-10-19T15:39:18.588980+00:00",
+              "content_hash": "c619fa034d81e2ead8f495b0895c153ceda811ab4bc3dae4503853a25584efa5",
+              "excerpt": "This branch is permanently closed.",
+              "extraction_method": "visible_text_context_v1"
+            }
+          ],
+          "claims": [
+            {
+              "id": "d709c690-45c2-4848-9952-e6d595a2e268",
+              "business_id": "142aa0c7-633f-4918-a934-0be7fc0dea35",
+              "predicate": "source_heading",
+              "value": "Fictional audit source 3",
+              "evidence_id": "961b9204-cf41-4a29-bc7d-b51296aa1726",
+              "inference_flag": 0
+            }
+          ],
+          "contacts": [
+            {
+              "id": "a5dd0cf3-74f5-4e13-829f-0ea9cd7e0dec",
+              "business_id": "142aa0c7-633f-4918-a934-0be7fc0dea35",
+              "type": "phone",
+              "raw_value": "+1 202-555-0112",
+              "normalised_value": "+12025550112",
+              "attribution_state": "attributed",
+              "suppressed": false,
+              "last_checked_at": "2026-10-19T15:39:18.588980+00:00",
+              "evidence_ids": [
+                "1e42742f-d396-48ae-a3f2-0b6180d78568"
+              ],
+              "review_blocked": false,
+              "attribution_reviewed_at": "2026-10-19T15:39:18.607676+00:00"
+            }
+          ],
+          "feedback": [],
+          "unknowns": {
+            "official_business_identity": "Source identity has a manual review; official ownership and independent corroboration are not established.",
+            "business_location": "Cited source location text is saved in the review; geographic matching remains a reviewer judgement, not an independently verified address.",
+            "contact_ownership": "Contacts appear on this page; ownership, role and reachability require review.",
+            "contact_format": "Phone-like text is a candidate number, not a validity check. Local numbers retain source formatting because no country is assumed.",
+            "buying_intent": "Not established by contact extraction.",
+            "budget": "No evidence of budget has been collected.",
+            "product_fit": "No grounded need analysis has been reviewed for this record."
+          },
+          "coverage": "One supplied page; linked pages and JavaScript-rendered content are not inspected."
+        },
+        "lead": {
+          "id": "14e30d71-bb7d-4a06-8b2c-85d51520d12c",
+          "synthetic": true,
+          "created_at": "2026-10-19T15:39:18.588980+00:00",
+          "source_url": "https://quality-fixture-3.example/",
+          "source_heading": "Fictional audit source 3",
+          "business_name": "Fictional audit source 3",
+          "branch": null,
+          "address": "Fictional North",
+          "service_area": null,
+          "identity_status": "source_attributed",
+          "identity_reviewed_at": "2026-10-19T15:39:18.607676+00:00",
+          "product": "Stock planning",
+          "target_geography": "Fictional North",
+          "contacts": [
+            {
+              "id": "a5dd0cf3-74f5-4e13-829f-0ea9cd7e0dec",
+              "business_id": "142aa0c7-633f-4918-a934-0be7fc0dea35",
+              "type": "phone",
+              "raw_value": "+1 202-555-0112",
+              "normalised_value": "+12025550112",
+              "attribution_state": "attributed",
+              "suppressed": false,
+              "last_checked_at": "2026-10-19T15:39:18.588980+00:00",
+              "evidence_ids": [
+                "1e42742f-d396-48ae-a3f2-0b6180d78568"
+              ],
+              "review_blocked": false,
+              "attribution_reviewed_at": "2026-10-19T15:39:18.607676+00:00",
+              "excluded": false,
+              "effective_state": "attributed",
+              "exclusion_reasons": [],
+              "evidence": [
+                {
+                  "id": "1e42742f-d396-48ae-a3f2-0b6180d78568",
+                  "business_id": "142aa0c7-633f-4918-a934-0be7fc0dea35",
+                  "source_url": "https://quality-fixture-3.example/",
+                  "retrieved_at": "2026-10-19T15:39:18.588980+00:00",
+                  "content_hash": "c619fa034d81e2ead8f495b0895c153ceda811ab4bc3dae4503853a25584efa5",
+                  "excerpt": "Phone: +1 202-555-0112.",
+                  "extraction_method": "visible_html_v1"
+                }
+              ],
+              "reachability": "unknown",
+              "outreach_approved": false
+            }
+          ],
+          "analysis_state": "not_reviewed",
+          "saved_fit": "unknown",
+          "effective_fit": "unknown",
+          "analysis_reviewed_at": null,
+          "need_hypothesis": null,
+          "analysis_interpretation": "No need analysis has been reviewed.",
+          "review_state": "needs_review",
+          "review_reasons": [
+            "Need and offer relevance have not been reviewed."
+          ],
+          "exclusion_reasons": [],
+          "next_action": "Review need, offer relevance and existing alternatives.",
+          "intent_state": "unknown",
+          "budget": null,
+          "budget_reason": "No documented prospect interaction establishes a budget.",
+          "outreach_approved": false
+        },
+        "units": [
+          {
+            "id": "claim:d709c690-45c2-4848-9952-e6d595a2e268",
+            "label": "Source heading",
+            "value": "Fictional audit source 3",
+            "evidence_ids": [
+              "961b9204-cf41-4a29-bc7d-b51296aa1726"
+            ]
+          },
+          {
+            "id": "contact:a5dd0cf3-74f5-4e13-829f-0ea9cd7e0dec",
+            "label": "Source publishes contact (ownership separate)",
+            "value": "+1 202-555-0112",
+            "evidence_ids": [
+              "1e42742f-d396-48ae-a3f2-0b6180d78568"
+            ]
+          },
+          {
+            "id": "identity:business_name",
+            "label": "Quoted business name",
+            "value": "Fictional audit source 3",
+            "evidence_ids": [
+              "961b9204-cf41-4a29-bc7d-b51296aa1726"
+            ]
+          },
+          {
+            "id": "identity:address",
+            "label": "Quoted address",
+            "value": "Fictional North",
+            "evidence_ids": [
+              "59de831b-c7e4-4036-8b5e-49de34a8eaca"
+            ]
+          }
+        ],
+        "comparison_sources": []
+      },
+      "source_changed_since_snapshot": false,
+      "audit": {
+        "revision": 1,
+        "updated_at": "2026-10-19T15:39:18.867187+00:00",
+        "document": {
+          "reviewer": "Fixture author · Synthetic demonstration",
+          "identity": {
+            "outcome": "pass",
+            "evidence_ids": [
+              "961b9204-cf41-4a29-bc7d-b51296aa1726"
+            ],
+            "reason": "Authored fictional example only; inspect the scenario text. This is not a real manual review."
+          },
+          "relevance": {
+            "outcome": "fail",
+            "evidence_ids": [
+              "961b9204-cf41-4a29-bc7d-b51296aa1726"
+            ],
+            "reason": "Authored fictional example only; inspect the scenario text. This is not a real manual review."
+          },
+          "contacts": [
+            {
+              "outcome": "pass",
+              "evidence_ids": [
+                "1e42742f-d396-48ae-a3f2-0b6180d78568"
+              ],
+              "reason": "Authored fictional example only; inspect the scenario text. This is not a real manual review.",
+              "target_id": "a5dd0cf3-74f5-4e13-829f-0ea9cd7e0dec"
+            }
+          ],
+          "claims": [
+            {
+              "outcome": "pass",
+              "evidence_ids": [
+                "961b9204-cf41-4a29-bc7d-b51296aa1726"
+              ],
+              "reason": "Authored fictional example only; inspect the scenario text. This is not a real manual review.",
+              "target_id": "claim:d709c690-45c2-4848-9952-e6d595a2e268"
+            },
+            {
+              "outcome": "pass",
+              "evidence_ids": [
+                "1e42742f-d396-48ae-a3f2-0b6180d78568"
+              ],
+              "reason": "Authored fictional example only; inspect the scenario text. This is not a real manual review.",
+              "target_id": "contact:a5dd0cf3-74f5-4e13-829f-0ea9cd7e0dec"
+            },
+            {
+              "outcome": "pass",
+              "evidence_ids": [
+                "961b9204-cf41-4a29-bc7d-b51296aa1726"
+              ],
+              "reason": "Authored fictional example only; inspect the scenario text. This is not a real manual review.",
+              "target_id": "identity:business_name"
+            },
+            {
+              "outcome": "pass",
+              "evidence_ids": [
+                "59de831b-c7e4-4036-8b5e-49de34a8eaca"
+              ],
+              "reason": "Authored fictional example only; inspect the scenario text. This is not a real manual review.",
+              "target_id": "identity:address"
+            }
+          ],
+          "issue_tags": [
+            "closed_branch"
+          ],
+          "notes": "Deliberately includes erroneous fixture-authored predictions and unknown relevance. No real prospect or buying interest is represented."
+        }
+      }
+    },
+    {
+      "research_id": "3e4cdb6f-42a6-4b06-bff8-f2cc21881fe8",
+      "ordinal": 3,
+      "snapshot_sha256": "2eb827c65538af6a2d5f6678c96e8aaae5dae939f019a93bf5383ffa06125e98",
+      "snapshot": {
+        "research": {
+          "id": "3e4cdb6f-42a6-4b06-bff8-f2cc21881fe8",
+          "product": "Stock planning",
+          "geography": "Fictional South",
+          "created_at": "2026-10-19T15:39:18.627404+00:00",
+          "synthetic": true,
+          "business_id": "dde267c1-4965-4e20-9835-5bd4ec8e39c9",
+          "canonical_name": "Fictional audit source 4",
+          "source_url": "https://quality-fixture-4.example/",
+          "identity_status": "source_attributed",
+          "assessment": {
+            "identity": {
+              "document": {
+                "decision": "source_attributed",
+                "source_role": "business",
+                "business_name": {
+                  "value": "Fictional audit source 4",
+                  "evidence_ids": [
+                    "95440785-f7c8-4657-bc30-3bb9d79bd959"
+                  ]
+                },
+                "branch": null,
+                "address": {
+                  "value": "Fictional South",
+                  "evidence_ids": [
+                    "71a62b25-0215-4258-8105-3fb8b4bc54ea"
+                  ]
+                },
+                "service_area": null,
+                "geography": "matches",
+                "exclusions": "clear",
+                "exclusion_reason": "Fixture-authored prediction to exercise the audit.",
+                "contact_reviews": [
+                  {
+                    "contact_id": "ce283180-b48a-4f91-88c0-48f491ea68fc",
+                    "decision": "attributed",
+                    "evidence_ids": [
+                      "2eb9ce14-8c25-4e77-a529-837614289fc0"
+                    ]
+                  }
+                ],
+                "comparisons": [],
+                "notes": ""
+              },
+              "comparison_signatures": {},
+              "revision": 1,
+              "updated_at": "2026-10-19T15:39:18.655589+00:00",
+              "method": "manual_review"
+            },
+            "analysis": null,
+            "identity_blockers": [],
+            "analysis_state": "not_reviewed",
+            "analysis_review_reasons": [],
+            "related_scope": "Up to 200 recent records, 20 related source pages; same-page repeats and synthetic/live records are kept separate. Signals are comparison hints, not identity proof.",
+            "intent_state": "unknown",
+            "budget": null,
+            "scope": "Source-reviewed judgements and hypotheses; no corroboration, reachability, buying interest or outreach approval is established."
+          },
+          "product_brief": null,
+          "evidence": [
+            {
+              "id": "95440785-f7c8-4657-bc30-3bb9d79bd959",
+              "business_id": "dde267c1-4965-4e20-9835-5bd4ec8e39c9",
+              "source_url": "https://quality-fixture-4.example/",
+              "retrieved_at": "2026-10-19T15:39:18.627404+00:00",
+              "content_hash": "7bf1cc4a93128dc4ec47b704503e98f82bb6bd01b269b2379cb9ef1ad4e63e40",
+              "excerpt": "Fictional audit source 4",
+              "extraction_method": "visible_html_v1"
+            },
+            {
+              "id": "2eb9ce14-8c25-4e77-a529-837614289fc0",
+              "business_id": "dde267c1-4965-4e20-9835-5bd4ec8e39c9",
+              "source_url": "https://quality-fixture-4.example/",
+              "retrieved_at": "2026-10-19T15:39:18.627404+00:00",
+              "content_hash": "7bf1cc4a93128dc4ec47b704503e98f82bb6bd01b269b2379cb9ef1ad4e63e40",
+              "excerpt": "Phone: +1 202-555-0113.",
+              "extraction_method": "visible_html_v1"
+            },
+            {
+              "id": "71a62b25-0215-4258-8105-3fb8b4bc54ea",
+              "business_id": "dde267c1-4965-4e20-9835-5bd4ec8e39c9",
+              "source_url": "https://quality-fixture-4.example/",
+              "retrieved_at": "2026-10-19T15:39:18.627404+00:00",
+              "content_hash": "7bf1cc4a93128dc4ec47b704503e98f82bb6bd01b269b2379cb9ef1ad4e63e40",
+              "excerpt": "Location: Fictional South.",
+              "extraction_method": "visible_text_context_v1"
+            },
+            {
+              "id": "63333a48-9f0d-42be-920b-728e4c02dda5",
+              "business_id": "dde267c1-4965-4e20-9835-5bd4ec8e39c9",
+              "source_url": "https://quality-fixture-4.example/",
+              "retrieved_at": "2026-10-19T15:39:18.627404+00:00",
+              "content_hash": "7bf1cc4a93128dc4ec47b704503e98f82bb6bd01b269b2379cb9ef1ad4e63e40",
+              "excerpt": "The team says its current stock process meets its needs.",
+              "extraction_method": "visible_text_context_v1"
+            }
+          ],
+          "claims": [
+            {
+              "id": "5bc9b6b0-8a81-4c73-a707-8d4bfd5354fa",
+              "business_id": "dde267c1-4965-4e20-9835-5bd4ec8e39c9",
+              "predicate": "source_heading",
+              "value": "Fictional audit source 4",
+              "evidence_id": "95440785-f7c8-4657-bc30-3bb9d79bd959",
+              "inference_flag": 0
+            }
+          ],
+          "contacts": [
+            {
+              "id": "ce283180-b48a-4f91-88c0-48f491ea68fc",
+              "business_id": "dde267c1-4965-4e20-9835-5bd4ec8e39c9",
+              "type": "phone",
+              "raw_value": "+1 202-555-0113",
+              "normalised_value": "+12025550113",
+              "attribution_state": "attributed",
+              "suppressed": false,
+              "last_checked_at": "2026-10-19T15:39:18.627404+00:00",
+              "evidence_ids": [
+                "2eb9ce14-8c25-4e77-a529-837614289fc0"
+              ],
+              "review_blocked": false,
+              "attribution_reviewed_at": "2026-10-19T15:39:18.655589+00:00"
+            }
+          ],
+          "feedback": [],
+          "unknowns": {
+            "official_business_identity": "Source identity has a manual review; official ownership and independent corroboration are not established.",
+            "business_location": "Cited source location text is saved in the review; geographic matching remains a reviewer judgement, not an independently verified address.",
+            "contact_ownership": "Contacts appear on this page; ownership, role and reachability require review.",
+            "contact_format": "Phone-like text is a candidate number, not a validity check. Local numbers retain source formatting because no country is assumed.",
+            "buying_intent": "Not established by contact extraction.",
+            "budget": "No evidence of budget has been collected.",
+            "product_fit": "No grounded need analysis has been reviewed for this record."
+          },
+          "coverage": "One supplied page; linked pages and JavaScript-rendered content are not inspected."
+        },
+        "lead": {
+          "id": "3e4cdb6f-42a6-4b06-bff8-f2cc21881fe8",
+          "synthetic": true,
+          "created_at": "2026-10-19T15:39:18.627404+00:00",
+          "source_url": "https://quality-fixture-4.example/",
+          "source_heading": "Fictional audit source 4",
+          "business_name": "Fictional audit source 4",
+          "branch": null,
+          "address": "Fictional South",
+          "service_area": null,
+          "identity_status": "source_attributed",
+          "identity_reviewed_at": "2026-10-19T15:39:18.655589+00:00",
+          "product": "Stock planning",
+          "target_geography": "Fictional South",
+          "contacts": [
+            {
+              "id": "ce283180-b48a-4f91-88c0-48f491ea68fc",
+              "business_id": "dde267c1-4965-4e20-9835-5bd4ec8e39c9",
+              "type": "phone",
+              "raw_value": "+1 202-555-0113",
+              "normalised_value": "+12025550113",
+              "attribution_state": "attributed",
+              "suppressed": false,
+              "last_checked_at": "2026-10-19T15:39:18.627404+00:00",
+              "evidence_ids": [
+                "2eb9ce14-8c25-4e77-a529-837614289fc0"
+              ],
+              "review_blocked": false,
+              "attribution_reviewed_at": "2026-10-19T15:39:18.655589+00:00",
+              "excluded": false,
+              "effective_state": "attributed",
+              "exclusion_reasons": [],
+              "evidence": [
+                {
+                  "id": "2eb9ce14-8c25-4e77-a529-837614289fc0",
+                  "business_id": "dde267c1-4965-4e20-9835-5bd4ec8e39c9",
+                  "source_url": "https://quality-fixture-4.example/",
+                  "retrieved_at": "2026-10-19T15:39:18.627404+00:00",
+                  "content_hash": "7bf1cc4a93128dc4ec47b704503e98f82bb6bd01b269b2379cb9ef1ad4e63e40",
+                  "excerpt": "Phone: +1 202-555-0113.",
+                  "extraction_method": "visible_html_v1"
+                }
+              ],
+              "reachability": "unknown",
+              "outreach_approved": false
+            }
+          ],
+          "analysis_state": "not_reviewed",
+          "saved_fit": "unknown",
+          "effective_fit": "unknown",
+          "analysis_reviewed_at": null,
+          "need_hypothesis": null,
+          "analysis_interpretation": "No need analysis has been reviewed.",
+          "review_state": "needs_review",
+          "review_reasons": [
+            "Need and offer relevance have not been reviewed."
+          ],
+          "exclusion_reasons": [],
+          "next_action": "Review need, offer relevance and existing alternatives.",
+          "intent_state": "unknown",
+          "budget": null,
+          "budget_reason": "No documented prospect interaction establishes a budget.",
+          "outreach_approved": false
+        },
+        "units": [
+          {
+            "id": "claim:5bc9b6b0-8a81-4c73-a707-8d4bfd5354fa",
+            "label": "Source heading",
+            "value": "Fictional audit source 4",
+            "evidence_ids": [
+              "95440785-f7c8-4657-bc30-3bb9d79bd959"
+            ]
+          },
+          {
+            "id": "contact:ce283180-b48a-4f91-88c0-48f491ea68fc",
+            "label": "Source publishes contact (ownership separate)",
+            "value": "+1 202-555-0113",
+            "evidence_ids": [
+              "2eb9ce14-8c25-4e77-a529-837614289fc0"
+            ]
+          },
+          {
+            "id": "identity:business_name",
+            "label": "Quoted business name",
+            "value": "Fictional audit source 4",
+            "evidence_ids": [
+              "95440785-f7c8-4657-bc30-3bb9d79bd959"
+            ]
+          },
+          {
+            "id": "identity:address",
+            "label": "Quoted address",
+            "value": "Fictional South",
+            "evidence_ids": [
+              "71a62b25-0215-4258-8105-3fb8b4bc54ea"
+            ]
+          }
+        ],
+        "comparison_sources": []
+      },
+      "source_changed_since_snapshot": false,
+      "audit": {
+        "revision": 1,
+        "updated_at": "2026-10-19T15:39:18.905130+00:00",
+        "document": {
+          "reviewer": "Fixture author · Synthetic demonstration",
+          "identity": {
+            "outcome": "pass",
+            "evidence_ids": [
+              "95440785-f7c8-4657-bc30-3bb9d79bd959"
+            ],
+            "reason": "Authored fictional example only; inspect the scenario text. This is not a real manual review."
+          },
+          "relevance": {
+            "outcome": "fail",
+            "evidence_ids": [
+              "95440785-f7c8-4657-bc30-3bb9d79bd959"
+            ],
+            "reason": "Authored fictional example only; inspect the scenario text. This is not a real manual review."
+          },
+          "contacts": [
+            {
+              "outcome": "pass",
+              "evidence_ids": [
+                "2eb9ce14-8c25-4e77-a529-837614289fc0"
+              ],
+              "reason": "Authored fictional example only; inspect the scenario text. This is not a real manual review.",
+              "target_id": "ce283180-b48a-4f91-88c0-48f491ea68fc"
+            }
+          ],
+          "claims": [
+            {
+              "outcome": "pass",
+              "evidence_ids": [
+                "95440785-f7c8-4657-bc30-3bb9d79bd959"
+              ],
+              "reason": "Authored fictional example only; inspect the scenario text. This is not a real manual review.",
+              "target_id": "claim:5bc9b6b0-8a81-4c73-a707-8d4bfd5354fa"
+            },
+            {
+              "outcome": "pass",
+              "evidence_ids": [
+                "2eb9ce14-8c25-4e77-a529-837614289fc0"
+              ],
+              "reason": "Authored fictional example only; inspect the scenario text. This is not a real manual review.",
+              "target_id": "contact:ce283180-b48a-4f91-88c0-48f491ea68fc"
+            },
+            {
+              "outcome": "pass",
+              "evidence_ids": [
+                "95440785-f7c8-4657-bc30-3bb9d79bd959"
+              ],
+              "reason": "Authored fictional example only; inspect the scenario text. This is not a real manual review.",
+              "target_id": "identity:business_name"
+            },
+            {
+              "outcome": "pass",
+              "evidence_ids": [
+                "71a62b25-0215-4258-8105-3fb8b4bc54ea"
+              ],
+              "reason": "Authored fictional example only; inspect the scenario text. This is not a real manual review.",
+              "target_id": "identity:address"
+            }
+          ],
+          "issue_tags": [
+            "no_need"
+          ],
+          "notes": "Deliberately includes erroneous fixture-authored predictions and unknown relevance. No real prospect or buying interest is represented."
+        }
+      }
+    },
+    {
+      "research_id": "d9de36ca-33a4-47c3-a15f-76f6ccded478",
+      "ordinal": 4,
+      "snapshot_sha256": "d5e70cb0bc721e67f985a2bc0399149c6b614f06fa8fd559d7fa62c975a891ba",
+      "snapshot": {
+        "research": {
+          "id": "d9de36ca-33a4-47c3-a15f-76f6ccded478",
+          "product": "Tender alerts",
+          "geography": "Fictional North",
+          "created_at": "2026-10-19T15:39:18.677403+00:00",
+          "synthetic": true,
+          "business_id": "db48c3c2-0265-4deb-a338-1810c552913e",
+          "canonical_name": "Fictional audit source 5",
+          "source_url": "https://quality-fixture-5.example/",
+          "identity_status": "source_attributed",
+          "assessment": {
+            "identity": {
+              "document": {
+                "decision": "source_attributed",
+                "source_role": "business",
+                "business_name": {
+                  "value": "Fictional audit source 5",
+                  "evidence_ids": [
+                    "07b94c53-b1d9-46a5-8abd-3fdf6579af05"
+                  ]
+                },
+                "branch": null,
+                "address": {
+                  "value": "Fictional North",
+                  "evidence_ids": [
+                    "6e1aa43b-667f-44ca-bcc4-8f6d3ce1214f"
+                  ]
+                },
+                "service_area": null,
+                "geography": "matches",
+                "exclusions": "clear",
+                "exclusion_reason": "Fixture-authored prediction to exercise the audit.",
+                "contact_reviews": [
+                  {
+                    "contact_id": "e047a1f7-c42e-4050-93ad-622d77892ef8",
+                    "decision": "attributed",
+                    "evidence_ids": [
+                      "519f1a66-b703-4fe8-9512-783887d523e1"
+                    ]
+                  }
+                ],
+                "comparisons": [],
+                "notes": ""
+              },
+              "comparison_signatures": {},
+              "revision": 1,
+              "updated_at": "2026-10-19T15:39:18.697306+00:00",
+              "method": "manual_review"
+            },
+            "analysis": null,
+            "identity_blockers": [],
+            "analysis_state": "not_reviewed",
+            "analysis_review_reasons": [],
+            "related_scope": "Up to 200 recent records, 20 related source pages; same-page repeats and synthetic/live records are kept separate. Signals are comparison hints, not identity proof.",
+            "intent_state": "unknown",
+            "budget": null,
+            "scope": "Source-reviewed judgements and hypotheses; no corroboration, reachability, buying interest or outreach approval is established."
+          },
+          "product_brief": null,
+          "evidence": [
+            {
+              "id": "07b94c53-b1d9-46a5-8abd-3fdf6579af05",
+              "business_id": "db48c3c2-0265-4deb-a338-1810c552913e",
+              "source_url": "https://quality-fixture-5.example/",
+              "retrieved_at": "2026-10-19T15:39:18.677403+00:00",
+              "content_hash": "3d3b1da4511a300d2098a252a32035e206101c42173da9e0d7f96fdd8133e304",
+              "excerpt": "Fictional audit source 5",
+              "extraction_method": "visible_html_v1"
+            },
+            {
+              "id": "519f1a66-b703-4fe8-9512-783887d523e1",
+              "business_id": "db48c3c2-0265-4deb-a338-1810c552913e",
+              "source_url": "https://quality-fixture-5.example/",
+              "retrieved_at": "2026-10-19T15:39:18.677403+00:00",
+              "content_hash": "3d3b1da4511a300d2098a252a32035e206101c42173da9e0d7f96fdd8133e304",
+              "excerpt": "Phone: +1 202-555-0114.",
+              "extraction_method": "visible_html_v1"
+            },
+            {
+              "id": "6e1aa43b-667f-44ca-bcc4-8f6d3ce1214f",
+              "business_id": "db48c3c2-0265-4deb-a338-1810c552913e",
+              "source_url": "https://quality-fixture-5.example/",
+              "retrieved_at": "2026-10-19T15:39:18.677403+00:00",
+              "content_hash": "3d3b1da4511a300d2098a252a32035e206101c42173da9e0d7f96fdd8133e304",
+              "excerpt": "Location: Fictional North.",
+              "extraction_method": "visible_text_context_v1"
+            },
+            {
+              "id": "3842f225-2c2c-4ac7-be4b-63666ecde5fa",
+              "business_id": "db48c3c2-0265-4deb-a338-1810c552913e",
+              "source_url": "https://quality-fixture-5.example/",
+              "retrieved_at": "2026-10-19T15:39:18.677403+00:00",
+              "content_hash": "3d3b1da4511a300d2098a252a32035e206101c42173da9e0d7f96fdd8133e304",
+              "excerpt": "Directory contact: the published number belongs to the directory operator, not the listed prospect.",
+              "extraction_method": "visible_text_context_v1"
+            }
+          ],
+          "claims": [
+            {
+              "id": "e630e559-b1ef-424f-9684-44bf91e2ff02",
+              "business_id": "db48c3c2-0265-4deb-a338-1810c552913e",
+              "predicate": "source_heading",
+              "value": "Fictional audit source 5",
+              "evidence_id": "07b94c53-b1d9-46a5-8abd-3fdf6579af05",
+              "inference_flag": 0
+            }
+          ],
+          "contacts": [
+            {
+              "id": "e047a1f7-c42e-4050-93ad-622d77892ef8",
+              "business_id": "db48c3c2-0265-4deb-a338-1810c552913e",
+              "type": "phone",
+              "raw_value": "+1 202-555-0114",
+              "normalised_value": "+12025550114",
+              "attribution_state": "attributed",
+              "suppressed": false,
+              "last_checked_at": "2026-10-19T15:39:18.677403+00:00",
+              "evidence_ids": [
+                "519f1a66-b703-4fe8-9512-783887d523e1"
+              ],
+              "review_blocked": false,
+              "attribution_reviewed_at": "2026-10-19T15:39:18.697306+00:00"
+            }
+          ],
+          "feedback": [],
+          "unknowns": {
+            "official_business_identity": "Source identity has a manual review; official ownership and independent corroboration are not established.",
+            "business_location": "Cited source location text is saved in the review; geographic matching remains a reviewer judgement, not an independently verified address.",
+            "contact_ownership": "Contacts appear on this page; ownership, role and reachability require review.",
+            "contact_format": "Phone-like text is a candidate number, not a validity check. Local numbers retain source formatting because no country is assumed.",
+            "buying_intent": "Not established by contact extraction.",
+            "budget": "No evidence of budget has been collected.",
+            "product_fit": "No grounded need analysis has been reviewed for this record."
+          },
+          "coverage": "One supplied page; linked pages and JavaScript-rendered content are not inspected."
+        },
+        "lead": {
+          "id": "d9de36ca-33a4-47c3-a15f-76f6ccded478",
+          "synthetic": true,
+          "created_at": "2026-10-19T15:39:18.677403+00:00",
+          "source_url": "https://quality-fixture-5.example/",
+          "source_heading": "Fictional audit source 5",
+          "business_name": "Fictional audit source 5",
+          "branch": null,
+          "address": "Fictional North",
+          "service_area": null,
+          "identity_status": "source_attributed",
+          "identity_reviewed_at": "2026-10-19T15:39:18.697306+00:00",
+          "product": "Tender alerts",
+          "target_geography": "Fictional North",
+          "contacts": [
+            {
+              "id": "e047a1f7-c42e-4050-93ad-622d77892ef8",
+              "business_id": "db48c3c2-0265-4deb-a338-1810c552913e",
+              "type": "phone",
+              "raw_value": "+1 202-555-0114",
+              "normalised_value": "+12025550114",
+              "attribution_state": "attributed",
+              "suppressed": false,
+              "last_checked_at": "2026-10-19T15:39:18.677403+00:00",
+              "evidence_ids": [
+                "519f1a66-b703-4fe8-9512-783887d523e1"
+              ],
+              "review_blocked": false,
+              "attribution_reviewed_at": "2026-10-19T15:39:18.697306+00:00",
+              "excluded": false,
+              "effective_state": "attributed",
+              "exclusion_reasons": [],
+              "evidence": [
+                {
+                  "id": "519f1a66-b703-4fe8-9512-783887d523e1",
+                  "business_id": "db48c3c2-0265-4deb-a338-1810c552913e",
+                  "source_url": "https://quality-fixture-5.example/",
+                  "retrieved_at": "2026-10-19T15:39:18.677403+00:00",
+                  "content_hash": "3d3b1da4511a300d2098a252a32035e206101c42173da9e0d7f96fdd8133e304",
+                  "excerpt": "Phone: +1 202-555-0114.",
+                  "extraction_method": "visible_html_v1"
+                }
+              ],
+              "reachability": "unknown",
+              "outreach_approved": false
+            }
+          ],
+          "analysis_state": "not_reviewed",
+          "saved_fit": "unknown",
+          "effective_fit": "unknown",
+          "analysis_reviewed_at": null,
+          "need_hypothesis": null,
+          "analysis_interpretation": "No need analysis has been reviewed.",
+          "review_state": "needs_review",
+          "review_reasons": [
+            "Need and offer relevance have not been reviewed."
+          ],
+          "exclusion_reasons": [],
+          "next_action": "Review need, offer relevance and existing alternatives.",
+          "intent_state": "unknown",
+          "budget": null,
+          "budget_reason": "No documented prospect interaction establishes a budget.",
+          "outreach_approved": false
+        },
+        "units": [
+          {
+            "id": "claim:e630e559-b1ef-424f-9684-44bf91e2ff02",
+            "label": "Source heading",
+            "value": "Fictional audit source 5",
+            "evidence_ids": [
+              "07b94c53-b1d9-46a5-8abd-3fdf6579af05"
+            ]
+          },
+          {
+            "id": "contact:e047a1f7-c42e-4050-93ad-622d77892ef8",
+            "label": "Source publishes contact (ownership separate)",
+            "value": "+1 202-555-0114",
+            "evidence_ids": [
+              "519f1a66-b703-4fe8-9512-783887d523e1"
+            ]
+          },
+          {
+            "id": "identity:business_name",
+            "label": "Quoted business name",
+            "value": "Fictional audit source 5",
+            "evidence_ids": [
+              "07b94c53-b1d9-46a5-8abd-3fdf6579af05"
+            ]
+          },
+          {
+            "id": "identity:address",
+            "label": "Quoted address",
+            "value": "Fictional North",
+            "evidence_ids": [
+              "6e1aa43b-667f-44ca-bcc4-8f6d3ce1214f"
+            ]
+          }
+        ],
+        "comparison_sources": []
+      },
+      "source_changed_since_snapshot": false,
+      "audit": {
+        "revision": 1,
+        "updated_at": "2026-10-19T15:39:18.939797+00:00",
+        "document": {
+          "reviewer": "Fixture author · Synthetic demonstration",
+          "identity": {
+            "outcome": "fail",
+            "evidence_ids": [
+              "07b94c53-b1d9-46a5-8abd-3fdf6579af05"
+            ],
+            "reason": "Authored fictional example only; inspect the scenario text. This is not a real manual review."
+          },
+          "relevance": {
+            "outcome": "unknown",
+            "evidence_ids": [
+              "07b94c53-b1d9-46a5-8abd-3fdf6579af05"
+            ],
+            "reason": "Authored fictional example only; inspect the scenario text. This is not a real manual review."
+          },
+          "contacts": [
+            {
+              "outcome": "fail",
+              "evidence_ids": [
+                "519f1a66-b703-4fe8-9512-783887d523e1"
+              ],
+              "reason": "Authored fictional example only; inspect the scenario text. This is not a real manual review.",
+              "target_id": "e047a1f7-c42e-4050-93ad-622d77892ef8"
+            }
+          ],
+          "claims": [
+            {
+              "outcome": "pass",
+              "evidence_ids": [
+                "07b94c53-b1d9-46a5-8abd-3fdf6579af05"
+              ],
+              "reason": "Authored fictional example only; inspect the scenario text. This is not a real manual review.",
+              "target_id": "claim:e630e559-b1ef-424f-9684-44bf91e2ff02"
+            },
+            {
+              "outcome": "pass",
+              "evidence_ids": [
+                "519f1a66-b703-4fe8-9512-783887d523e1"
+              ],
+              "reason": "Authored fictional example only; inspect the scenario text. This is not a real manual review.",
+              "target_id": "contact:e047a1f7-c42e-4050-93ad-622d77892ef8"
+            },
+            {
+              "outcome": "pass",
+              "evidence_ids": [
+                "07b94c53-b1d9-46a5-8abd-3fdf6579af05"
+              ],
+              "reason": "Authored fictional example only; inspect the scenario text. This is not a real manual review.",
+              "target_id": "identity:business_name"
+            },
+            {
+              "outcome": "pass",
+              "evidence_ids": [
+                "6e1aa43b-667f-44ca-bcc4-8f6d3ce1214f"
+              ],
+              "reason": "Authored fictional example only; inspect the scenario text. This is not a real manual review.",
+              "target_id": "identity:address"
+            }
+          ],
+          "issue_tags": [
+            "directory_operator",
+            "wrong_phone"
+          ],
+          "notes": "Deliberately includes erroneous fixture-authored predictions and unknown relevance. No real prospect or buying interest is represented."
+        }
+      }
+    },
+    {
+      "research_id": "b1f80628-db99-4833-a755-df8c174e925e",
+      "ordinal": 5,
+      "snapshot_sha256": "b4d85e37793d59dd6b32f78ca8f3108aea74617944af7e85d4426d9f06b92432",
+      "snapshot": {
+        "research": {
+          "id": "b1f80628-db99-4833-a755-df8c174e925e",
+          "product": "Tender alerts",
+          "geography": "Fictional South",
+          "created_at": "2026-10-19T15:39:18.713413+00:00",
+          "synthetic": true,
+          "business_id": "37fcd00b-2e1a-4acb-b0c1-3da13505c0d7",
+          "canonical_name": "Fictional audit source 6",
+          "source_url": "https://quality-fixture-6.example/",
+          "identity_status": "unresolved",
+          "assessment": {
+            "identity": {
+              "document": {
+                "decision": "unresolved",
+                "source_role": "business",
+                "business_name": {
+                  "value": "Fictional audit source 6",
+                  "evidence_ids": [
+                    "062de504-0a48-4fc5-8b70-779b828939a8"
+                  ]
+                },
+                "branch": null,
+                "address": {
+                  "value": "Fictional South",
+                  "evidence_ids": [
+                    "650c7035-0b7a-4780-93be-5794cc550fed"
+                  ]
+                },
+                "service_area": null,
+                "geography": "matches",
+                "exclusions": "clear",
+                "exclusion_reason": "Fixture-authored prediction to exercise the audit.",
+                "contact_reviews": [],
+                "comparisons": [],
+                "notes": ""
+              },
+              "comparison_signatures": {},
+              "revision": 1,
+              "updated_at": "2026-10-19T15:39:18.738301+00:00",
+              "method": "manual_review"
+            },
+            "analysis": null,
+            "identity_blockers": [
+              "Identity is disputed or unresolved."
+            ],
+            "analysis_state": "not_reviewed",
+            "analysis_review_reasons": [],
+            "related_scope": "Up to 200 recent records, 20 related source pages; same-page repeats and synthetic/live records are kept separate. Signals are comparison hints, not identity proof.",
+            "intent_state": "unknown",
+            "budget": null,
+            "scope": "Source-reviewed judgements and hypotheses; no corroboration, reachability, buying interest or outreach approval is established."
+          },
+          "product_brief": null,
+          "evidence": [
+            {
+              "id": "062de504-0a48-4fc5-8b70-779b828939a8",
+              "business_id": "37fcd00b-2e1a-4acb-b0c1-3da13505c0d7",
+              "source_url": "https://quality-fixture-6.example/",
+              "retrieved_at": "2026-10-19T15:39:18.713413+00:00",
+              "content_hash": "a7d91de8c7a3ccc13221071b6ee8e7f80ffb5da178ae6105e3300c793971db42",
+              "excerpt": "Fictional audit source 6",
+              "extraction_method": "visible_html_v1"
+            },
+            {
+              "id": "d9214e74-9b7a-48c4-91f5-32ecdb898f40",
+              "business_id": "37fcd00b-2e1a-4acb-b0c1-3da13505c0d7",
+              "source_url": "https://quality-fixture-6.example/",
+              "retrieved_at": "2026-10-19T15:39:18.713413+00:00",
+              "content_hash": "a7d91de8c7a3ccc13221071b6ee8e7f80ffb5da178ae6105e3300c793971db42",
+              "excerpt": "Phone: +1 202-555-0115.",
+              "extraction_method": "visible_html_v1"
+            },
+            {
+              "id": "650c7035-0b7a-4780-93be-5794cc550fed",
+              "business_id": "37fcd00b-2e1a-4acb-b0c1-3da13505c0d7",
+              "source_url": "https://quality-fixture-6.example/",
+              "retrieved_at": "2026-10-19T15:39:18.713413+00:00",
+              "content_hash": "a7d91de8c7a3ccc13221071b6ee8e7f80ffb5da178ae6105e3300c793971db42",
+              "excerpt": "Location: Fictional South.",
+              "extraction_method": "visible_text_context_v1"
+            },
+            {
+              "id": "08bf0a11-a952-4d7e-9605-4ba72fd6e13f",
+              "business_id": "37fcd00b-2e1a-4acb-b0c1-3da13505c0d7",
+              "source_url": "https://quality-fixture-6.example/",
+              "retrieved_at": "2026-10-19T15:39:18.713413+00:00",
+              "content_hash": "a7d91de8c7a3ccc13221071b6ee8e7f80ffb5da178ae6105e3300c793971db42",
+              "excerpt": "This copied listing describes a similarly named business; the contact is not the target prospect's number.",
+              "extraction_method": "visible_text_context_v1"
+            }
+          ],
+          "claims": [
+            {
+              "id": "2ac8e89f-ad29-44d4-acd4-6a0ad488b688",
+              "business_id": "37fcd00b-2e1a-4acb-b0c1-3da13505c0d7",
+              "predicate": "source_heading",
+              "value": "Fictional audit source 6",
+              "evidence_id": "062de504-0a48-4fc5-8b70-779b828939a8",
+              "inference_flag": 0
+            }
+          ],
+          "contacts": [
+            {
+              "id": "28ee3161-2248-4a79-beb1-e36024f95788",
+              "business_id": "37fcd00b-2e1a-4acb-b0c1-3da13505c0d7",
+              "type": "phone",
+              "raw_value": "+1 202-555-0115",
+              "normalised_value": "+12025550115",
+              "attribution_state": "extracted",
+              "suppressed": false,
+              "last_checked_at": "2026-10-19T15:39:18.713413+00:00",
+              "evidence_ids": [
+                "d9214e74-9b7a-48c4-91f5-32ecdb898f40"
+              ],
+              "review_blocked": false
+            }
+          ],
+          "feedback": [],
+          "unknowns": {
+            "official_business_identity": "Source identity has a manual review; official ownership and independent corroboration are not established.",
+            "business_location": "Cited source location text is saved in the review; geographic matching remains a reviewer judgement, not an independently verified address.",
+            "contact_ownership": "Contacts appear on this page; ownership, role and reachability require review.",
+            "contact_format": "Phone-like text is a candidate number, not a validity check. Local numbers retain source formatting because no country is assumed.",
+            "buying_intent": "Not established by contact extraction.",
+            "budget": "No evidence of budget has been collected.",
+            "product_fit": "No grounded need analysis has been reviewed for this record."
+          },
+          "coverage": "One supplied page; linked pages and JavaScript-rendered content are not inspected."
+        },
+        "lead": {
+          "id": "b1f80628-db99-4833-a755-df8c174e925e",
+          "synthetic": true,
+          "created_at": "2026-10-19T15:39:18.713413+00:00",
+          "source_url": "https://quality-fixture-6.example/",
+          "source_heading": "Fictional audit source 6",
+          "business_name": "Fictional audit source 6",
+          "branch": null,
+          "address": "Fictional South",
+          "service_area": null,
+          "identity_status": "unresolved",
+          "identity_reviewed_at": "2026-10-19T15:39:18.738301+00:00",
+          "product": "Tender alerts",
+          "target_geography": "Fictional South",
+          "contacts": [
+            {
+              "id": "28ee3161-2248-4a79-beb1-e36024f95788",
+              "business_id": "37fcd00b-2e1a-4acb-b0c1-3da13505c0d7",
+              "type": "phone",
+              "raw_value": "+1 202-555-0115",
+              "normalised_value": "+12025550115",
+              "attribution_state": "extracted",
+              "suppressed": false,
+              "last_checked_at": "2026-10-19T15:39:18.713413+00:00",
+              "evidence_ids": [
+                "d9214e74-9b7a-48c4-91f5-32ecdb898f40"
+              ],
+              "review_blocked": false,
+              "excluded": false,
+              "effective_state": "extracted",
+              "exclusion_reasons": [],
+              "evidence": [
+                {
+                  "id": "d9214e74-9b7a-48c4-91f5-32ecdb898f40",
+                  "business_id": "37fcd00b-2e1a-4acb-b0c1-3da13505c0d7",
+                  "source_url": "https://quality-fixture-6.example/",
+                  "retrieved_at": "2026-10-19T15:39:18.713413+00:00",
+                  "content_hash": "a7d91de8c7a3ccc13221071b6ee8e7f80ffb5da178ae6105e3300c793971db42",
+                  "excerpt": "Phone: +1 202-555-0115.",
+                  "extraction_method": "visible_html_v1"
+                }
+              ],
+              "reachability": "unknown",
+              "outreach_approved": false
+            }
+          ],
+          "analysis_state": "not_reviewed",
+          "saved_fit": "unknown",
+          "effective_fit": "unknown",
+          "analysis_reviewed_at": null,
+          "need_hypothesis": null,
+          "analysis_interpretation": "No need analysis has been reviewed.",
+          "review_state": "needs_review",
+          "review_reasons": [
+            "Identity is disputed or unresolved.",
+            "Need and offer relevance have not been reviewed.",
+            "One or more contact ownership reviews remain incomplete."
+          ],
+          "exclusion_reasons": [],
+          "next_action": "Review business and branch identity against the saved source evidence.",
+          "intent_state": "unknown",
+          "budget": null,
+          "budget_reason": "No documented prospect interaction establishes a budget.",
+          "outreach_approved": false
+        },
+        "units": [
+          {
+            "id": "claim:2ac8e89f-ad29-44d4-acd4-6a0ad488b688",
+            "label": "Source heading",
+            "value": "Fictional audit source 6",
+            "evidence_ids": [
+              "062de504-0a48-4fc5-8b70-779b828939a8"
+            ]
+          },
+          {
+            "id": "contact:28ee3161-2248-4a79-beb1-e36024f95788",
+            "label": "Source publishes contact (ownership separate)",
+            "value": "+1 202-555-0115",
+            "evidence_ids": [
+              "d9214e74-9b7a-48c4-91f5-32ecdb898f40"
+            ]
+          },
+          {
+            "id": "identity:business_name",
+            "label": "Quoted business name",
+            "value": "Fictional audit source 6",
+            "evidence_ids": [
+              "062de504-0a48-4fc5-8b70-779b828939a8"
+            ]
+          },
+          {
+            "id": "identity:address",
+            "label": "Quoted address",
+            "value": "Fictional South",
+            "evidence_ids": [
+              "650c7035-0b7a-4780-93be-5794cc550fed"
+            ]
+          }
+        ],
+        "comparison_sources": []
+      },
+      "source_changed_since_snapshot": false,
+      "audit": {
+        "revision": 1,
+        "updated_at": "2026-10-19T15:39:18.974642+00:00",
+        "document": {
+          "reviewer": "Fixture author · Synthetic demonstration",
+          "identity": {
+            "outcome": "unknown",
+            "evidence_ids": [
+              "062de504-0a48-4fc5-8b70-779b828939a8"
+            ],
+            "reason": "Authored fictional example only; inspect the scenario text. This is not a real manual review."
+          },
+          "relevance": {
+            "outcome": "unknown",
+            "evidence_ids": [
+              "062de504-0a48-4fc5-8b70-779b828939a8"
+            ],
+            "reason": "Authored fictional example only; inspect the scenario text. This is not a real manual review."
+          },
+          "contacts": [
+            {
+              "outcome": "fail",
+              "evidence_ids": [
+                "d9214e74-9b7a-48c4-91f5-32ecdb898f40"
+              ],
+              "reason": "Authored fictional example only; inspect the scenario text. This is not a real manual review.",
+              "target_id": "28ee3161-2248-4a79-beb1-e36024f95788"
+            }
+          ],
+          "claims": [
+            {
+              "outcome": "pass",
+              "evidence_ids": [
+                "062de504-0a48-4fc5-8b70-779b828939a8"
+              ],
+              "reason": "Authored fictional example only; inspect the scenario text. This is not a real manual review.",
+              "target_id": "claim:2ac8e89f-ad29-44d4-acd4-6a0ad488b688"
+            },
+            {
+              "outcome": "pass",
+              "evidence_ids": [
+                "d9214e74-9b7a-48c4-91f5-32ecdb898f40"
+              ],
+              "reason": "Authored fictional example only; inspect the scenario text. This is not a real manual review.",
+              "target_id": "contact:28ee3161-2248-4a79-beb1-e36024f95788"
+            },
+            {
+              "outcome": "pass",
+              "evidence_ids": [
+                "062de504-0a48-4fc5-8b70-779b828939a8"
+              ],
+              "reason": "Authored fictional example only; inspect the scenario text. This is not a real manual review.",
+              "target_id": "identity:business_name"
+            },
+            {
+              "outcome": "pass",
+              "evidence_ids": [
+                "650c7035-0b7a-4780-93be-5794cc550fed"
+              ],
+              "reason": "Authored fictional example only; inspect the scenario text. This is not a real manual review.",
+              "target_id": "identity:address"
+            }
+          ],
+          "issue_tags": [
+            "same_name",
+            "wrong_phone"
+          ],
+          "notes": "Deliberately includes erroneous fixture-authored predictions and unknown relevance. No real prospect or buying interest is represented."
+        }
+      }
+    }
+  ],
+  "report": {
+    "overall": {
+      "sample_count": 6,
+      "fully_reviewed_cases": 4,
+      "changed_since_snapshot": 0,
+      "identity_abstentions": 1,
+      "contact_abstentions_or_exclusions": 1,
+      "identity_accuracy": {
+        "eligible": 5,
+        "reviewed": 5,
+        "passed": 4,
+        "failed": 1,
+        "unknown": 0,
+        "unreviewed": 0,
+        "rate": 0.8,
+        "wilson_95": [
+          0.37553462976252533,
+          0.9637758913675698
+        ],
+        "target": 0.95,
+        "gate_status": "below_target"
+      },
+      "contact_attribution_precision": {
+        "eligible": 5,
+        "reviewed": 5,
+        "passed": 4,
+        "failed": 1,
+        "unknown": 0,
+        "unreviewed": 0,
+        "rate": 0.8,
+        "wilson_95": [
+          0.37553462976252533,
+          0.9637758913675698
+        ],
+        "target": 0.95,
+        "gate_status": "below_target"
+      },
+      "factual_reference_coverage": {
+        "eligible": 24,
+        "reviewed": 24,
+        "passed": 24,
+        "failed": 0,
+        "unknown": 0,
+        "unreviewed": 0,
+        "rate": 1.0,
+        "wilson_95": [
+          0.8620237953250198,
+          1.0
+        ],
+        "target": 1.0,
+        "gate_status": "observed_target_met"
+      },
+      "audited_evidence_support": {
+        "eligible": 24,
+        "reviewed": 24,
+        "passed": 24,
+        "failed": 0,
+        "unknown": 0,
+        "unreviewed": 0,
+        "rate": 1.0,
+        "wilson_95": [
+          0.8620237953250198,
+          1.0
+        ],
+        "target": 0.95,
+        "gate_status": "observed_target_met"
+      },
+      "reviewed_relevance_rate": {
+        "eligible": 6,
+        "reviewed": 4,
+        "passed": 1,
+        "failed": 3,
+        "unknown": 2,
+        "unreviewed": 0,
+        "rate": 0.25,
+        "wilson_95": [
+          0.04558726080970055,
+          0.6993581574175981
+        ],
+        "target": null,
+        "gate_status": "incomplete"
+      },
+      "precision_at_20": {
+        "rate": null,
+        "gate_status": "not_measured",
+        "target": 0.8,
+        "reason": "The current dashboard has no ranked shortlist snapshot. A relevance rate over selected cases is not precision@20."
+      },
+      "reviewer_issue_tags": {
+        "positive_fit": 1,
+        "existing_solution": 1,
+        "closed_branch": 1,
+        "no_need": 1,
+        "directory_operator": 1,
+        "wrong_phone": 2,
+        "same_name": 1
+      }
+    },
+    "segments": [
+      {
+        "offer": "Appointment support",
+        "target_geography": "Fictional North",
+        "sample_count": 1,
+        "fully_reviewed_cases": 1,
+        "changed_since_snapshot": 0,
+        "identity_abstentions": 0,
+        "contact_abstentions_or_exclusions": 0,
+        "identity_accuracy": {
+          "eligible": 1,
+          "reviewed": 1,
+          "passed": 1,
+          "failed": 0,
+          "unknown": 0,
+          "unreviewed": 0,
+          "rate": 1.0,
+          "wilson_95": [
+            0.20654931437723745,
+            1.0
+          ],
+          "target": 0.95,
+          "gate_status": "observed_target_met"
+        },
+        "contact_attribution_precision": {
+          "eligible": 1,
+          "reviewed": 1,
+          "passed": 1,
+          "failed": 0,
+          "unknown": 0,
+          "unreviewed": 0,
+          "rate": 1.0,
+          "wilson_95": [
+            0.20654931437723745,
+            1.0
+          ],
+          "target": 0.95,
+          "gate_status": "observed_target_met"
+        },
+        "factual_reference_coverage": {
+          "eligible": 4,
+          "reviewed": 4,
+          "passed": 4,
+          "failed": 0,
+          "unknown": 0,
+          "unreviewed": 0,
+          "rate": 1.0,
+          "wilson_95": [
+            0.5101091635454027,
+            1.0
+          ],
+          "target": 1.0,
+          "gate_status": "observed_target_met"
+        },
+        "audited_evidence_support": {
+          "eligible": 4,
+          "reviewed": 4,
+          "passed": 4,
+          "failed": 0,
+          "unknown": 0,
+          "unreviewed": 0,
+          "rate": 1.0,
+          "wilson_95": [
+            0.5101091635454027,
+            1.0
+          ],
+          "target": 0.95,
+          "gate_status": "observed_target_met"
+        },
+        "reviewed_relevance_rate": {
+          "eligible": 1,
+          "reviewed": 1,
+          "passed": 1,
+          "failed": 0,
+          "unknown": 0,
+          "unreviewed": 0,
+          "rate": 1.0,
+          "wilson_95": [
+            0.20654931437723745,
+            1.0
+          ],
+          "target": null,
+          "gate_status": "descriptive_only"
+        },
+        "precision_at_20": {
+          "rate": null,
+          "gate_status": "not_measured",
+          "target": 0.8,
+          "reason": "The current dashboard has no ranked shortlist snapshot. A relevance rate over selected cases is not precision@20."
+        },
+        "reviewer_issue_tags": {
+          "positive_fit": 1
+        }
+      },
+      {
+        "offer": "Appointment support",
+        "target_geography": "Fictional South",
+        "sample_count": 1,
+        "fully_reviewed_cases": 1,
+        "changed_since_snapshot": 0,
+        "identity_abstentions": 0,
+        "contact_abstentions_or_exclusions": 0,
+        "identity_accuracy": {
+          "eligible": 1,
+          "reviewed": 1,
+          "passed": 1,
+          "failed": 0,
+          "unknown": 0,
+          "unreviewed": 0,
+          "rate": 1.0,
+          "wilson_95": [
+            0.20654931437723745,
+            1.0
+          ],
+          "target": 0.95,
+          "gate_status": "observed_target_met"
+        },
+        "contact_attribution_precision": {
+          "eligible": 1,
+          "reviewed": 1,
+          "passed": 1,
+          "failed": 0,
+          "unknown": 0,
+          "unreviewed": 0,
+          "rate": 1.0,
+          "wilson_95": [
+            0.20654931437723745,
+            1.0
+          ],
+          "target": 0.95,
+          "gate_status": "observed_target_met"
+        },
+        "factual_reference_coverage": {
+          "eligible": 4,
+          "reviewed": 4,
+          "passed": 4,
+          "failed": 0,
+          "unknown": 0,
+          "unreviewed": 0,
+          "rate": 1.0,
+          "wilson_95": [
+            0.5101091635454027,
+            1.0
+          ],
+          "target": 1.0,
+          "gate_status": "observed_target_met"
+        },
+        "audited_evidence_support": {
+          "eligible": 4,
+          "reviewed": 4,
+          "passed": 4,
+          "failed": 0,
+          "unknown": 0,
+          "unreviewed": 0,
+          "rate": 1.0,
+          "wilson_95": [
+            0.5101091635454027,
+            1.0
+          ],
+          "target": 0.95,
+          "gate_status": "observed_target_met"
+        },
+        "reviewed_relevance_rate": {
+          "eligible": 1,
+          "reviewed": 1,
+          "passed": 0,
+          "failed": 1,
+          "unknown": 0,
+          "unreviewed": 0,
+          "rate": 0.0,
+          "wilson_95": [
+            0.0,
+            0.7934506856227626
+          ],
+          "target": null,
+          "gate_status": "descriptive_only"
+        },
+        "precision_at_20": {
+          "rate": null,
+          "gate_status": "not_measured",
+          "target": 0.8,
+          "reason": "The current dashboard has no ranked shortlist snapshot. A relevance rate over selected cases is not precision@20."
+        },
+        "reviewer_issue_tags": {
+          "existing_solution": 1
+        }
+      },
+      {
+        "offer": "Stock planning",
+        "target_geography": "Fictional North",
+        "sample_count": 1,
+        "fully_reviewed_cases": 1,
+        "changed_since_snapshot": 0,
+        "identity_abstentions": 0,
+        "contact_abstentions_or_exclusions": 0,
+        "identity_accuracy": {
+          "eligible": 1,
+          "reviewed": 1,
+          "passed": 1,
+          "failed": 0,
+          "unknown": 0,
+          "unreviewed": 0,
+          "rate": 1.0,
+          "wilson_95": [
+            0.20654931437723745,
+            1.0
+          ],
+          "target": 0.95,
+          "gate_status": "observed_target_met"
+        },
+        "contact_attribution_precision": {
+          "eligible": 1,
+          "reviewed": 1,
+          "passed": 1,
+          "failed": 0,
+          "unknown": 0,
+          "unreviewed": 0,
+          "rate": 1.0,
+          "wilson_95": [
+            0.20654931437723745,
+            1.0
+          ],
+          "target": 0.95,
+          "gate_status": "observed_target_met"
+        },
+        "factual_reference_coverage": {
+          "eligible": 4,
+          "reviewed": 4,
+          "passed": 4,
+          "failed": 0,
+          "unknown": 0,
+          "unreviewed": 0,
+          "rate": 1.0,
+          "wilson_95": [
+            0.5101091635454027,
+            1.0
+          ],
+          "target": 1.0,
+          "gate_status": "observed_target_met"
+        },
+        "audited_evidence_support": {
+          "eligible": 4,
+          "reviewed": 4,
+          "passed": 4,
+          "failed": 0,
+          "unknown": 0,
+          "unreviewed": 0,
+          "rate": 1.0,
+          "wilson_95": [
+            0.5101091635454027,
+            1.0
+          ],
+          "target": 0.95,
+          "gate_status": "observed_target_met"
+        },
+        "reviewed_relevance_rate": {
+          "eligible": 1,
+          "reviewed": 1,
+          "passed": 0,
+          "failed": 1,
+          "unknown": 0,
+          "unreviewed": 0,
+          "rate": 0.0,
+          "wilson_95": [
+            0.0,
+            0.7934506856227626
+          ],
+          "target": null,
+          "gate_status": "descriptive_only"
+        },
+        "precision_at_20": {
+          "rate": null,
+          "gate_status": "not_measured",
+          "target": 0.8,
+          "reason": "The current dashboard has no ranked shortlist snapshot. A relevance rate over selected cases is not precision@20."
+        },
+        "reviewer_issue_tags": {
+          "closed_branch": 1
+        }
+      },
+      {
+        "offer": "Stock planning",
+        "target_geography": "Fictional South",
+        "sample_count": 1,
+        "fully_reviewed_cases": 1,
+        "changed_since_snapshot": 0,
+        "identity_abstentions": 0,
+        "contact_abstentions_or_exclusions": 0,
+        "identity_accuracy": {
+          "eligible": 1,
+          "reviewed": 1,
+          "passed": 1,
+          "failed": 0,
+          "unknown": 0,
+          "unreviewed": 0,
+          "rate": 1.0,
+          "wilson_95": [
+            0.20654931437723745,
+            1.0
+          ],
+          "target": 0.95,
+          "gate_status": "observed_target_met"
+        },
+        "contact_attribution_precision": {
+          "eligible": 1,
+          "reviewed": 1,
+          "passed": 1,
+          "failed": 0,
+          "unknown": 0,
+          "unreviewed": 0,
+          "rate": 1.0,
+          "wilson_95": [
+            0.20654931437723745,
+            1.0
+          ],
+          "target": 0.95,
+          "gate_status": "observed_target_met"
+        },
+        "factual_reference_coverage": {
+          "eligible": 4,
+          "reviewed": 4,
+          "passed": 4,
+          "failed": 0,
+          "unknown": 0,
+          "unreviewed": 0,
+          "rate": 1.0,
+          "wilson_95": [
+            0.5101091635454027,
+            1.0
+          ],
+          "target": 1.0,
+          "gate_status": "observed_target_met"
+        },
+        "audited_evidence_support": {
+          "eligible": 4,
+          "reviewed": 4,
+          "passed": 4,
+          "failed": 0,
+          "unknown": 0,
+          "unreviewed": 0,
+          "rate": 1.0,
+          "wilson_95": [
+            0.5101091635454027,
+            1.0
+          ],
+          "target": 0.95,
+          "gate_status": "observed_target_met"
+        },
+        "reviewed_relevance_rate": {
+          "eligible": 1,
+          "reviewed": 1,
+          "passed": 0,
+          "failed": 1,
+          "unknown": 0,
+          "unreviewed": 0,
+          "rate": 0.0,
+          "wilson_95": [
+            0.0,
+            0.7934506856227626
+          ],
+          "target": null,
+          "gate_status": "descriptive_only"
+        },
+        "precision_at_20": {
+          "rate": null,
+          "gate_status": "not_measured",
+          "target": 0.8,
+          "reason": "The current dashboard has no ranked shortlist snapshot. A relevance rate over selected cases is not precision@20."
+        },
+        "reviewer_issue_tags": {
+          "no_need": 1
+        }
+      },
+      {
+        "offer": "Tender alerts",
+        "target_geography": "Fictional North",
+        "sample_count": 1,
+        "fully_reviewed_cases": 0,
+        "changed_since_snapshot": 0,
+        "identity_abstentions": 0,
+        "contact_abstentions_or_exclusions": 0,
+        "identity_accuracy": {
+          "eligible": 1,
+          "reviewed": 1,
+          "passed": 0,
+          "failed": 1,
+          "unknown": 0,
+          "unreviewed": 0,
+          "rate": 0.0,
+          "wilson_95": [
+            0.0,
+            0.7934506856227626
+          ],
+          "target": 0.95,
+          "gate_status": "below_target"
+        },
+        "contact_attribution_precision": {
+          "eligible": 1,
+          "reviewed": 1,
+          "passed": 0,
+          "failed": 1,
+          "unknown": 0,
+          "unreviewed": 0,
+          "rate": 0.0,
+          "wilson_95": [
+            0.0,
+            0.7934506856227626
+          ],
+          "target": 0.95,
+          "gate_status": "below_target"
+        },
+        "factual_reference_coverage": {
+          "eligible": 4,
+          "reviewed": 4,
+          "passed": 4,
+          "failed": 0,
+          "unknown": 0,
+          "unreviewed": 0,
+          "rate": 1.0,
+          "wilson_95": [
+            0.5101091635454027,
+            1.0
+          ],
+          "target": 1.0,
+          "gate_status": "observed_target_met"
+        },
+        "audited_evidence_support": {
+          "eligible": 4,
+          "reviewed": 4,
+          "passed": 4,
+          "failed": 0,
+          "unknown": 0,
+          "unreviewed": 0,
+          "rate": 1.0,
+          "wilson_95": [
+            0.5101091635454027,
+            1.0
+          ],
+          "target": 0.95,
+          "gate_status": "observed_target_met"
+        },
+        "reviewed_relevance_rate": {
+          "eligible": 1,
+          "reviewed": 0,
+          "passed": 0,
+          "failed": 0,
+          "unknown": 1,
+          "unreviewed": 0,
+          "rate": null,
+          "wilson_95": null,
+          "target": null,
+          "gate_status": "not_measured"
+        },
+        "precision_at_20": {
+          "rate": null,
+          "gate_status": "not_measured",
+          "target": 0.8,
+          "reason": "The current dashboard has no ranked shortlist snapshot. A relevance rate over selected cases is not precision@20."
+        },
+        "reviewer_issue_tags": {
+          "directory_operator": 1,
+          "wrong_phone": 1
+        }
+      },
+      {
+        "offer": "Tender alerts",
+        "target_geography": "Fictional South",
+        "sample_count": 1,
+        "fully_reviewed_cases": 0,
+        "changed_since_snapshot": 0,
+        "identity_abstentions": 1,
+        "contact_abstentions_or_exclusions": 1,
+        "identity_accuracy": {
+          "eligible": 0,
+          "reviewed": 0,
+          "passed": 0,
+          "failed": 0,
+          "unknown": 0,
+          "unreviewed": 0,
+          "rate": null,
+          "wilson_95": null,
+          "target": 0.95,
+          "gate_status": "not_measured"
+        },
+        "contact_attribution_precision": {
+          "eligible": 0,
+          "reviewed": 0,
+          "passed": 0,
+          "failed": 0,
+          "unknown": 0,
+          "unreviewed": 0,
+          "rate": null,
+          "wilson_95": null,
+          "target": 0.95,
+          "gate_status": "not_measured"
+        },
+        "factual_reference_coverage": {
+          "eligible": 4,
+          "reviewed": 4,
+          "passed": 4,
+          "failed": 0,
+          "unknown": 0,
+          "unreviewed": 0,
+          "rate": 1.0,
+          "wilson_95": [
+            0.5101091635454027,
+            1.0
+          ],
+          "target": 1.0,
+          "gate_status": "observed_target_met"
+        },
+        "audited_evidence_support": {
+          "eligible": 4,
+          "reviewed": 4,
+          "passed": 4,
+          "failed": 0,
+          "unknown": 0,
+          "unreviewed": 0,
+          "rate": 1.0,
+          "wilson_95": [
+            0.5101091635454027,
+            1.0
+          ],
+          "target": 0.95,
+          "gate_status": "observed_target_met"
+        },
+        "reviewed_relevance_rate": {
+          "eligible": 1,
+          "reviewed": 0,
+          "passed": 0,
+          "failed": 0,
+          "unknown": 1,
+          "unreviewed": 0,
+          "rate": null,
+          "wilson_95": null,
+          "target": null,
+          "gate_status": "not_measured"
+        },
+        "precision_at_20": {
+          "rate": null,
+          "gate_status": "not_measured",
+          "target": 0.8,
+          "reason": "The current dashboard has no ranked shortlist snapshot. A relevance rate over selected cases is not precision@20."
+        },
+        "reviewer_issue_tags": {
+          "same_name": 1,
+          "wrong_phone": 1
+        }
+      }
+    ],
+    "requirements": {
+      "minimum_real_reviewed_cases": 60,
+      "real_fully_reviewed_cases": 0,
+      "offer_labels": 3,
+      "geography_labels": 2,
+      "scenario_tags_not_yet_recorded": [
+        "copied_listing",
+        "wrong_branch"
+      ]
+    },
+    "release_readiness": "not_established",
+    "missing_acceptance": [
+      "Synthetic examples cannot establish real-source quality or satisfy the real review sample.",
+      "The plan requires at least 60 fully reviewed real prospects; unknown or missing judgements do not count as complete.",
+      "Precision@20, independent identity/contact adjudication and broader live-source acceptance remain unestablished."
+    ],
+    "other_release_gates": [
+      {
+        "metric": "disputed_contacts_in_approved_queue",
+        "target": 0,
+        "status": "not_measured",
+        "reason": "No outreach-approved queue exists; absence of approval is not a tested approval safeguard."
+      },
+      {
+        "metric": "duplicate_outbound_actions",
+        "target": 0,
+        "status": "not_measured",
+        "reason": "Outbound integrations and their retry evaluation are not implemented."
+      },
+      {
+        "metric": "fabricated_contacts_or_file_paths_in_fixtures",
+        "target": 0,
+        "status": "not_measured",
+        "reason": "This source-audit report does not run the separate parser fixture suite or a file-search evaluation."
+      },
+      {
+        "metric": "local_file_success_at_3",
+        "target": 0.9,
+        "status": "not_measured",
+        "reason": "Approved-folder search and its representative 30-task evaluation are future work."
+      }
+    ],
+    "methodology": [
+      "Pass/fail are manual reviewer judgements against saved excerpts, not independently established ground truth or proof of reachability.",
+      "Unknown and unreviewed cases are shown separately and never counted as correct. Rates use known pass/fail judgements only; incomplete audit coverage cannot meet a gate.",
+      "Identity/contact precision counts only source-attributed identity and effective attributed contacts captured as predictions. Abstentions and excluded contacts are reported separately.",
+      "Factual reference coverage tests the presence and scope of evidence IDs. It does not prove semantic support; that requires the separate manual evidence audit.",
+      "95% Wilson intervals use an independent Bernoulli approximation. Correlated pages, contacts and reviewer selection bias limit interpretation; these are descriptive intervals, not universal accuracy guarantees.",
+      "Observed target met means the point estimate on fully audited eligible units reaches the proposed threshold. It does not imply statistical certification, adequate sample size or release readiness.",
+      "Cases have distinct source URLs, not independently resolved business identities. Separate pages can still describe the same business. Offer/geography grouping normalizes case and whitespace only.",
+      "User-selected samples are not random samples. Development and holdout declarations are user supplied; no automatic training, ranking, promotion or outreach occurs."
+    ],
+    "generated_at": "2026-10-19T15:39:19.030115+00:00",
+    "review_set_sha256": "29811d984d0089b35c3a30b64825473dca80a47d19a934e1a6dc07c57ac885c5"
+  },
+  "demonstration": {
+    "fictional": true,
+    "judgement_origin": "developer_authored_fixture",
+    "purpose": "Illustrate pass, fail, unknown, abstention and segment reporting; not an accuracy measurement."
+  }
+}

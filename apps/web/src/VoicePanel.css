@@ -1,0 +1,13 @@
+.voice-panel { display: grid; gap: 22px; }
+.voice-panel .panel { min-width: 0; }
+.voice-panel input, .voice-panel textarea, .voice-panel select { width: 100%; max-width: 100%; }
+.voice-panel textarea { min-height: 120px; resize: vertical; }
+.voice-panel label { margin-top: 16px; }
+.voice-controls { display: flex; flex-wrap: wrap; gap: 10px; margin: 16px 0; }
+.voice-talk { touch-action: none; user-select: none; }
+.voice-talk.recording { background: #a12b31; }
+.voice-plan, .voice-result article { margin-top: 18px; padding: 16px; border: 1px solid #dce5df; border-radius: 10px; }
+.voice-plan p, .voice-result p, .voice-path, .voice-result blockquote { overflow-wrap: anywhere; white-space: pre-wrap; }
+.voice-preview pre { max-height: 400px; overflow: auto; white-space: pre-wrap; overflow-wrap: anywhere; padding: 16px; background: #f4f7f5; }
+.voice-panel .voice-check { display: flex; align-items: center; gap: 10px; }
+.voice-panel .voice-check input { width: auto; }
