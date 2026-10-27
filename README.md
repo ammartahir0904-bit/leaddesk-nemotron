@@ -34,17 +34,29 @@ Generic AI lead tools make it worse: they invent "pain points" and confident mes
 - **Tavily** (`backend/adapters/tavily.py`) is an opt-in search provider for "Find online": free search engines block
   automated searches, and Tavily gives reliable results with domain filters for Facebook and Instagram.
 
-## Try it
-- **Hosted demo:** see the link in the hackathon submission. Data there is fictional (reserved `.example` addresses, phone
-  numbers reserved for drama); the demo key is filled in for you; internet actions are off, Nemotron rewording is on.
-- **Run the demo yourself (Docker):**
+## Try it (test build: the demo in 2 commands)
+Needs only [Docker](https://docs.docker.com/get-docker/). From the repository folder:
+```
+docker build -t leaddesk-demo .
+docker run --rm -p 8765:8765 leaddesk-demo
+```
+Open **http://127.0.0.1:8765**. The demo key is already filled in: click **Unlock workspace**, then go to
+**Find clients → Saved searches → Camden Town** and open any café.
+
+- All data in the demo is **fictional**: nine invented cafés in Camden, London, with reserved `.example` web addresses and
+  phone numbers reserved for drama. Searching the map and the web and reading real websites are switched off in the demo.
+- **To see NVIDIA Nemotron on Nebius Token Factory** rewording a pitch, add your key and choose an NVIDIA model:
   ```
-  docker build -t leaddesk-demo .
-  docker run -p 8765:8765 -e NEBIUS_API_KEY=your-key leaddesk-demo
+  docker run --rm -p 8765:8765 -e NEBIUS_API_KEY=<your Token Factory key> leaddesk-demo
   ```
-  Open http://127.0.0.1:8765, then **Find clients → Saved searches → Camden Town**.
-- **Run the full app on your computer:** `./scripts/setup.sh` (Python 3.12, Node 24), `cp .env.example .env` and add your
-  keys (optional), then `./launch.sh` and paste the printed access key. See the sections below for every feature.
+  then **AI models and hardware → NVIDIA Nemotron on Nebius Token Factory → Use this model**, and on a café click
+  **Reword with AI**.
+- Things to try: the **Rejected contacts** box (temporary email, placeholder number, a number shared by three cafés),
+  **What you offer vs. what they have**, correcting a feature ("Actually they have it") and watching the pitch change,
+  and **Quality report and learned rules**.
+
+**Run the full app on your own computer** (real searches): `./scripts/setup.sh` (Python 3.12, Node 24),
+`cp .env.example .env` and add your keys (optional), then `./launch.sh` and paste the printed access key.
 
 ## Architecture
 FastAPI modular monolith + SQLite (local, migrations) + React (Vite). Deterministic parsing and checks first; models only

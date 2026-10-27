@@ -61,8 +61,8 @@ Measured accuracy from owner audits, more languages for messages, and team shari
 LeadDesk was built from 19 October 2026 (first commit), inside the submission period (26 August – 30 October 2026).
 
 ## Links
-- Public repository: [FILL IN]
-- Hosted demo: [FILL IN]
+- Public repository: https://github.com/ammartahir0904-bit/leaddesk-nemotron
+- Working demo (test build): https://github.com/ammartahir0904-bit/leaddesk-nemotron#try-it-test-build-the-demo-in-2-commands
 - Video (3 minutes or less, public on YouTube): [FILL IN]
 
 ## Built with
